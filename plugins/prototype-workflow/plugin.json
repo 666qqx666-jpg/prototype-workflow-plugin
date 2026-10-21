@@ -1,0 +1,11 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "description": "原型工作流：初始化、新需求、持续修改与交付",
+  "extensions": {
+    "com.openai": {
+      "onboardingSkill": "./skills/prototype-setup/SKILL.md"
+    }
+  },
+  "name": "prototype-workflow",
+  "version": "0.2.2"
+}

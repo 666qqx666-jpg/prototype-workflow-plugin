@@ -1,0 +1,20 @@
+{
+  "interface": {
+    "displayName": "原型交互工具包"
+  },
+  "name": "qqx-prototype",
+  "plugins": [
+    {
+      "category": "Productivity",
+      "name": "prototype-workflow",
+      "policy": {
+        "authentication": "ON_INSTALL",
+        "installation": "AVAILABLE"
+      },
+      "source": {
+        "path": "./plugins/prototype-workflow",
+        "source": "local"
+      }
+    }
+  ]
+}

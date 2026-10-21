@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.prototype-design-workflow/independent-review-v1.schema.json",
+  "title": "Independent review record for high-risk prototype handoff",
+  "type": "object",
+  "required": ["schemaVersion", "reviewId", "reviewerRole", "reviewedAt", "subject", "triggers", "verdict", "findings"],
+  "properties": {
+    "schemaVersion": {"const": "1.0.0"},
+    "reviewId": {"type": "string", "minLength": 1},
+    "reviewerRole": {"const": "independent"},
+    "reviewedAt": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?Z$"},
+    "subject": {
+      "type": "object",
+      "required": ["manifestHash", "prototypeHash", "evidenceBundleHash"],
+      "properties": {
+        "manifestHash": {"type": "string", "pattern": "^[a-fA-F0-9]{64}$"},
+        "prototypeHash": {"type": "string", "pattern": "^[a-fA-F0-9]{64}$"},
+        "evidenceBundleHash": {"type": "string", "pattern": "^[a-fA-F0-9]{64}$"}
+      },
+      "additionalProperties": false
+    },
+    "triggers": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {"enum": ["first-real-use", "rule-change", "complex-multi-surface", "full-coverage", "evidence-gap-or-conflict", "automatic-degradation", "repeat-failure", "unverified-authoritative-source", "unverified-prototype-lineage", "global-rule-classification"]}
+    },
+    "verdict": {"const": "pass"},
+    "findings": {"type": "array", "items": {"type": "string"}}
+  },
+  "additionalProperties": false
+}

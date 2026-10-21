@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>开发可读型原型交付</title>
+  <style>__CSS__</style>
+</head>
+<body data-build-mode="readonly-snapshot">
+  <main class="handoff-shell" data-panel-collapsed="false">
+    <iframe class="prototype-frame" title="只读原型"></iframe>
+    <aside class="developer-reader" id="developerReader" aria-label="需求开发说明"></aside>
+    <svg class="reader-connector" id="readerConnector" aria-hidden="true">
+      <path data-connector-path data-visible="false"></path>
+    </svg>
+  </main>
+  <script>
+    window.__HANDOFF_MANIFEST__ = __MANIFEST__;
+    window.__HANDOFF_LINEAGE_CONTEXT__ = __LINEAGE_CONTEXT__;
+    window.__PROTOTYPE_BASE64__ = '__PROTOTYPE_PAYLOAD__';
+  </script>
+  <script>__BUNDLE__</script>
+</body>
+</html>

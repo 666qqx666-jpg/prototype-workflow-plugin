@@ -1,0 +1,4 @@
+schema_version: 1
+source_of_truth: source-registry
+candidate_mode: explicit-local-source-set
+registry_version: "0.2.0"

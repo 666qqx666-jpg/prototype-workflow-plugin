@@ -1,0 +1,10 @@
+{
+  "distribution_version": "0.2.2",
+  "marketplace_name": "qqx-prototype",
+  "pack_sha256": "1f38fdeb105d30d4f16a4189a0fbc8e2223d56243a8c54ceb25174489d9649bc",
+  "package_path": "packages/prototype-workflow-kit-0.2.2.zip",
+  "package_sha256": "f502173ded9984b1ec5078f6598a9114d4f214290e8ad9a2a93538d17dc3616c",
+  "plugin_name": "prototype-workflow",
+  "schema_version": 1,
+  "skill_sha256": "b154fda8b059aa1e11566c3864aef292052a1ccbf558050795fdd2e3fcf9f55a"
+}

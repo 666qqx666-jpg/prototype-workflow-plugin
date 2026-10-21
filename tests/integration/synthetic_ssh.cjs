@@ -1,0 +1,21 @@
+'use strict';
+const assert = require('node:assert/strict');
+const os = require('node:os');
+const child = require('node:child_process');
+const originalInfo = os.userInfo;
+os.userInfo = () => ({...originalInfo(), homedir: process.env.PROTOTYPE_SYNTHETIC_OWNER_HOME});
+let calls = 0;
+child.spawnSync = (program, args, options) => {
+  assert.equal(program, 'ssh');
+  assert.equal(++calls, 1, 'one list only per Doctor');
+  assert.ok(args.at(-1).endsWith("'list'"), 'no project queries');
+  assert.ok(args.includes('StrictHostKeyChecking=yes'));
+  assert.equal(options.shell, false);
+  const mode = process.env.PROTOTYPE_SYNTHETIC_MODE;
+  if (mode === 'authorization_required') return {status:255, stdout:'', stderr:'Permission denied (publickey)'};
+  if (mode === 'host_identity_blocked') return {status:255, stdout:'', stderr:'Host key verification failed'};
+  if (mode === 'service_unavailable') return {status:1, stdout:'', stderr:'service failed'};
+  if (mode === 'query_probe_blocked') return {status:0, stdout:'{"success":true,"projects":{},"error":"access denied"}'};
+  assert.equal(mode, 'pass');
+  return {status:0, stdout:'{"success":true,"projects":{}}', stderr:''};
+};

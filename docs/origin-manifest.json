@@ -1,0 +1,1928 @@
+[
+  {
+    "source": "prototype-kit.py",
+    "path": "bootstrap/prototype-kit.py",
+    "original_sha256": "943fda60ecd01ab89870685def2fe1c420e6ac021bad0caade28f84a32825734",
+    "import_sha256": "943fda60ecd01ab89870685def2fe1c420e6ac021bad0caade28f84a32825734",
+    "change": "unchanged",
+    "current_sha256": "c20a801b289a9304612b7c7c964bbed1fb4f83a37334d3cf63cf1146ef375fd5",
+    "adapted": true
+  },
+  {
+    "source": "vendor/PyYAML-LICENSE.txt",
+    "path": "bootstrap/vendor/PyYAML-LICENSE.txt",
+    "original_sha256": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4",
+    "import_sha256": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4",
+    "change": "unchanged",
+    "current_sha256": "8d3928f9dc4490fd635707cb88eb26bd764102a7282954307d3e5167a577e8a4",
+    "adapted": false
+  },
+  {
+    "source": "vendor/yaml/__init__.py",
+    "path": "bootstrap/vendor/yaml/__init__.py",
+    "original_sha256": "b19dfcc333d6a75dfd73073901164507252f271b41d3b5f7d85510033a0547a7",
+    "import_sha256": "b19dfcc333d6a75dfd73073901164507252f271b41d3b5f7d85510033a0547a7",
+    "change": "unchanged",
+    "current_sha256": "b19dfcc333d6a75dfd73073901164507252f271b41d3b5f7d85510033a0547a7",
+    "adapted": false
+  },
+  {
+    "source": "vendor/yaml/composer.py",
+    "path": "bootstrap/vendor/yaml/composer.py",
+    "original_sha256": "fcaa37d16afa783594794a5ab94193dcb720f503c19ce3d59539c8311189f453",
+    "import_sha256": "fcaa37d16afa783594794a5ab94193dcb720f503c19ce3d59539c8311189f453",
+    "change": "unchanged",
+    "current_sha256": "fcaa37d16afa783594794a5ab94193dcb720f503c19ce3d59539c8311189f453",
+    "adapted": false
+  },
+  {
+    "source": "vendor/yaml/constructor.py",
+    "path": "bootstrap/vendor/yaml/constructor.py",
+    "original_sha256": "90d8247da78b524c10618fd0e857f54f3d97570fe91b5c5513d024ef3faf88b0",
+    "import_sha256": "90d8247da78b524c10618fd0e857f54f3d97570fe91b5c5513d024ef3faf88b0",
+    "change": "unchanged",
+    "current_sha256": "90d8247da78b524c10618fd0e857f54f3d97570fe91b5c5513d024ef3faf88b0",
+    "adapted": false
+  },
+  {
+    "source": "vendor/yaml/cyaml.py",
+    "path": "bootstrap/vendor/yaml/cyaml.py",
+    "original_sha256": "e99ac01bd7c062f7557b614aff0d21997a06ed962ca185306a91bc0a20bbd87d",
+    "import_sha256": "e99ac01bd7c062f7557b614aff0d21997a06ed962ca185306a91bc0a20bbd87d",
+    "change": "unchanged",
+    "current_sha256": "e99ac01bd7c062f7557b614aff0d21997a06ed962ca185306a91bc0a20bbd87d",
+    "adapted": false
+  },
+  {
+    "source": "vendor/yaml/dumper.py",
+    "path": "bootstrap/vendor/yaml/dumper.py",
+    "original_sha256": "3cb72d66563064ba7b5e679477046ebf89d8399d940670c8532f3e94a7cb17ea",
+    "import_sha256": "3cb72d66563064ba7b5e679477046ebf89d8399d940670c8532f3e94a7cb17ea",
+    "change": "unchanged",
+    "current_sha256": "3cb72d66563064ba7b5e679477046ebf89d8399d940670c8532f3e94a7cb17ea",
+    "adapted": false
+  },
+  {
+    "source": "vendor/yaml/emitter.py",
+    "path": "bootstrap/vendor/yaml/emitter.py",
+    "original_sha256": "8e086d694ede170837d5b1b407b45979aff6f40762f422a65eafd08e04290a44",
+    "import_sha256": "8e086d694ede170837d5b1b407b45979aff6f40762f422a65eafd08e04290a44",
+    "change": "unchanged",
+    "current_sha256": "8e086d694ede170837d5b1b407b45979aff6f40762f422a65eafd08e04290a44",
+    "adapted": false
+  },
+  {
+    "source": "vendor/yaml/error.py",
+    "path": "bootstrap/vendor/yaml/error.py",
+    "original_sha256": "021f73fada072546c4f63f8cf18a7181244ce4280b09cc15cc980b2d1176171a",
+    "import_sha256": "021f73fada072546c4f63f8cf18a7181244ce4280b09cc15cc980b2d1176171a",
+    "change": "unchanged",
+    "current_sha256": "021f73fada072546c4f63f8cf18a7181244ce4280b09cc15cc980b2d1176171a",
+    "adapted": false
+  },
+  {
+    "source": "vendor/yaml/events.py",
+    "path": "bootstrap/vendor/yaml/events.py",
+    "original_sha256": "e74fd392c810884e2ea7e94aa3f57e9c1cbeb402319083d0c58e6a0e1282787c",
+    "import_sha256": "e74fd392c810884e2ea7e94aa3f57e9c1cbeb402319083d0c58e6a0e1282787c",
+    "change": "unchanged",
+    "current_sha256": "e74fd392c810884e2ea7e94aa3f57e9c1cbeb402319083d0c58e6a0e1282787c",
+    "adapted": false
+  },
+  {
+    "source": "vendor/yaml/loader.py",
+    "path": "bootstrap/vendor/yaml/loader.py",
+    "original_sha256": "5156becc8aa6905482218abf3e04869b835226db4763645fff3438fdbd5f1cdd",
+    "import_sha256": "5156becc8aa6905482218abf3e04869b835226db4763645fff3438fdbd5f1cdd",
+    "change": "unchanged",
+    "current_sha256": "5156becc8aa6905482218abf3e04869b835226db4763645fff3438fdbd5f1cdd",
+    "adapted": false
+  },
+  {
+    "source": "vendor/yaml/nodes.py",
+    "path": "bootstrap/vendor/yaml/nodes.py",
+    "original_sha256": "80f28d8fca4a09d87677882bde021820d9cf39a3b11a12405226211919cf13ce",
+    "import_sha256": "80f28d8fca4a09d87677882bde021820d9cf39a3b11a12405226211919cf13ce",
+    "change": "unchanged",
+    "current_sha256": "80f28d8fca4a09d87677882bde021820d9cf39a3b11a12405226211919cf13ce",
+    "adapted": false
+  },
+  {
+    "source": "vendor/yaml/parser.py",
+    "path": "bootstrap/vendor/yaml/parser.py",
+    "original_sha256": "8a55a9e6fbe0a07146cef3990c8b45a068c3e83e369e1959ad9ca30306b4a09a",
+    "import_sha256": "8a55a9e6fbe0a07146cef3990c8b45a068c3e83e369e1959ad9ca30306b4a09a",
+    "change": "unchanged",
+    "current_sha256": "8a55a9e6fbe0a07146cef3990c8b45a068c3e83e369e1959ad9ca30306b4a09a",
+    "adapted": false
+  },
+  {
+    "source": "vendor/yaml/reader.py",
+    "path": "bootstrap/vendor/yaml/reader.py",
+    "original_sha256": "d1d9b38ab3a20c6e17a38d519ee412ecaf6b918df18c78956ac7c330d4ea08dc",
+    "import_sha256": "d1d9b38ab3a20c6e17a38d519ee412ecaf6b918df18c78956ac7c330d4ea08dc",
+    "change": "unchanged",
+    "current_sha256": "d1d9b38ab3a20c6e17a38d519ee412ecaf6b918df18c78956ac7c330d4ea08dc",
+    "adapted": false
+  },
+  {
+    "source": "vendor/yaml/representer.py",
+    "path": "bootstrap/vendor/yaml/representer.py",
+    "original_sha256": "22e58ff9c016f6c1ca1274b4802a926bcf78935060e1c813c5a0f021c6d143e6",
+    "import_sha256": "22e58ff9c016f6c1ca1274b4802a926bcf78935060e1c813c5a0f021c6d143e6",
+    "change": "unchanged",
+    "current_sha256": "22e58ff9c016f6c1ca1274b4802a926bcf78935060e1c813c5a0f021c6d143e6",
+    "adapted": false
+  },
+  {
+    "source": "vendor/yaml/resolver.py",
+    "path": "bootstrap/vendor/yaml/resolver.py",
+    "original_sha256": "f4bf9561f9b89961f1503d558385fbae30d12bfed565de9bf76c33abb63620a6",
+    "import_sha256": "f4bf9561f9b89961f1503d558385fbae30d12bfed565de9bf76c33abb63620a6",
+    "change": "unchanged",
+    "current_sha256": "f4bf9561f9b89961f1503d558385fbae30d12bfed565de9bf76c33abb63620a6",
+    "adapted": false
+  },
+  {
+    "source": "vendor/yaml/scanner.py",
+    "path": "bootstrap/vendor/yaml/scanner.py",
+    "original_sha256": "60433788b652690c17710460da5d91e0c753d3318fd85f5e1e42862a71f25906",
+    "import_sha256": "60433788b652690c17710460da5d91e0c753d3318fd85f5e1e42862a71f25906",
+    "change": "unchanged",
+    "current_sha256": "60433788b652690c17710460da5d91e0c753d3318fd85f5e1e42862a71f25906",
+    "adapted": false
+  },
+  {
+    "source": "vendor/yaml/serializer.py",
+    "path": "bootstrap/vendor/yaml/serializer.py",
+    "original_sha256": "0a1b85826854d35863e31808f0668abfabdf33606e8f06bd8bb7761401e3edc0",
+    "import_sha256": "0a1b85826854d35863e31808f0668abfabdf33606e8f06bd8bb7761401e3edc0",
+    "change": "unchanged",
+    "current_sha256": "0a1b85826854d35863e31808f0668abfabdf33606e8f06bd8bb7761401e3edc0",
+    "adapted": false
+  },
+  {
+    "source": "vendor/yaml/tokens.py",
+    "path": "bootstrap/vendor/yaml/tokens.py",
+    "original_sha256": "953408cd2570f0c83dc2fe39f7e4e388e41eeb05738aa69196a5f6ffcf6ba79e",
+    "import_sha256": "953408cd2570f0c83dc2fe39f7e4e388e41eeb05738aa69196a5f6ffcf6ba79e",
+    "change": "unchanged",
+    "current_sha256": "953408cd2570f0c83dc2fe39f7e4e388e41eeb05738aa69196a5f6ffcf6ba79e",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/enterprise-prototype-builder/SKILL.md",
+    "path": "skills/enterprise-prototype-builder/SKILL.md",
+    "original_sha256": "8caebc9cad7ae8ec624f628758d668909d0bd546440e07ac13906f1a253c0d6d",
+    "import_sha256": "8caebc9cad7ae8ec624f628758d668909d0bd546440e07ac13906f1a253c0d6d",
+    "change": "unchanged",
+    "current_sha256": "8caebc9cad7ae8ec624f628758d668909d0bd546440e07ac13906f1a253c0d6d",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/enterprise-prototype-builder/references/builder-output.md",
+    "path": "skills/enterprise-prototype-builder/references/builder-output.md",
+    "original_sha256": "534360b68e49c03bb4559cfd24cba0884935c9a875b930f96fdd4ec43ec98762",
+    "import_sha256": "534360b68e49c03bb4559cfd24cba0884935c9a875b930f96fdd4ec43ec98762",
+    "change": "unchanged",
+    "current_sha256": "534360b68e49c03bb4559cfd24cba0884935c9a875b930f96fdd4ec43ec98762",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/enterprise-prototype-chain/SKILL.md",
+    "path": "skills/enterprise-prototype-chain/SKILL.md",
+    "original_sha256": "b33406119aa1139c95b7a78a27f2fc73c4be7eafafb835db081a1e62d2daad97",
+    "import_sha256": "b33406119aa1139c95b7a78a27f2fc73c4be7eafafb835db081a1e62d2daad97",
+    "change": "unchanged",
+    "current_sha256": "b33406119aa1139c95b7a78a27f2fc73c4be7eafafb835db081a1e62d2daad97",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/enterprise-prototype-chain/evals/evals.json",
+    "path": "skills/enterprise-prototype-chain/evals/evals.json",
+    "original_sha256": "fc423f64de1f072f0d155c41b6df2ec76148d3158572460725cb4721cd7ab096",
+    "import_sha256": "fc423f64de1f072f0d155c41b6df2ec76148d3158572460725cb4721cd7ab096",
+    "change": "unchanged",
+    "current_sha256": "fc423f64de1f072f0d155c41b6df2ec76148d3158572460725cb4721cd7ab096",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/enterprise-prototype-code-query/SKILL.md",
+    "path": "skills/enterprise-prototype-code-query/SKILL.md",
+    "original_sha256": "c8c23573b810fbcbef81f6354789854f21844f34e9ea42b8032a6988c0e2040b",
+    "import_sha256": "c8c23573b810fbcbef81f6354789854f21844f34e9ea42b8032a6988c0e2040b",
+    "change": "unchanged",
+    "current_sha256": "72b48bc2afaa2b60fcc7c28abcfc76745a15436854efbd153d96cb70f1ac3f0a",
+    "adapted": true
+  },
+  {
+    "source": "enterprise-prototype-skills/enterprise-prototype-code-query/lib/ssh.js",
+    "path": "skills/enterprise-prototype-code-query/lib/ssh.js",
+    "original_sha256": "3e3b8550746a1b1a660dd0ea7857ca141d7c166cd428e1ce8631767aff44d626",
+    "import_sha256": "3e3b8550746a1b1a660dd0ea7857ca141d7c166cd428e1ce8631767aff44d626",
+    "change": "unchanged",
+    "current_sha256": "98a7b289f72dd4933732b083f8871cd159fd31f8a88ccec0299c6fe558b968b3",
+    "adapted": true
+  },
+  {
+    "source": "enterprise-prototype-skills/enterprise-prototype-code-query/scripts/code_query.js",
+    "path": "skills/enterprise-prototype-code-query/scripts/code_query.js",
+    "original_sha256": "84808e34a23e9b9a156651c67a3bd6ccbc38f544418b2676c4a7262ac0f68e48",
+    "import_sha256": "84808e34a23e9b9a156651c67a3bd6ccbc38f544418b2676c4a7262ac0f68e48",
+    "change": "unchanged",
+    "current_sha256": "cda633f0d54f42f91a9a28962215010efc2e9a2c749af46d2d7b8f6d3795eaf5",
+    "adapted": true
+  },
+  {
+    "source": "enterprise-prototype-skills/enterprise-prototype-code-query/tests/code-query.test.cjs",
+    "path": "skills/enterprise-prototype-code-query/tests/code-query.test.cjs",
+    "original_sha256": "78ed67292903a1ea221e752175a8048c1c46ede402167330e812c01918020031",
+    "import_sha256": "78ed67292903a1ea221e752175a8048c1c46ede402167330e812c01918020031",
+    "change": "unchanged",
+    "current_sha256": "22fccf4e409e9bf27d8650515b4aa094d0e1915c2f916d1381b00e0a4b5b2cd3",
+    "adapted": true
+  },
+  {
+    "source": "enterprise-prototype-skills/enterprise-prototype-review/SKILL.md",
+    "path": "skills/enterprise-prototype-review/SKILL.md",
+    "original_sha256": "3ace8e69caed88a354c2c42995453c982be6878e2328dbf22ad4bcf727c2a86d",
+    "import_sha256": "3ace8e69caed88a354c2c42995453c982be6878e2328dbf22ad4bcf727c2a86d",
+    "change": "unchanged",
+    "current_sha256": "3ace8e69caed88a354c2c42995453c982be6878e2328dbf22ad4bcf727c2a86d",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/enterprise-prototype-review/references/review-output.md",
+    "path": "skills/enterprise-prototype-review/references/review-output.md",
+    "original_sha256": "6147f844c03a22b0465b8262014ca39b05f211d1d82709e71f4b07e9990ef430",
+    "import_sha256": "6147f844c03a22b0465b8262014ca39b05f211d1d82709e71f4b07e9990ef430",
+    "change": "unchanged",
+    "current_sha256": "6147f844c03a22b0465b8262014ca39b05f211d1d82709e71f4b07e9990ef430",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/SKILL.md",
+    "path": "skills/prototype-design-workflow/SKILL.md",
+    "original_sha256": "bd2e1f244e08ab6ea7627fc371f24b7fa270c386329f8995a8d90bd386da091e",
+    "import_sha256": "bd2e1f244e08ab6ea7627fc371f24b7fa270c386329f8995a8d90bd386da091e",
+    "change": "unchanged",
+    "current_sha256": "bd2e1f244e08ab6ea7627fc371f24b7fa270c386329f8995a8d90bd386da091e",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/change-manifest-template.json",
+    "path": "skills/prototype-design-workflow/assets/change-manifest-template.json",
+    "original_sha256": "70ba47b6d53812ed67eed8ab703f6a69bf16530c149942bbb4dffd630cff7f87",
+    "import_sha256": "70ba47b6d53812ed67eed8ab703f6a69bf16530c149942bbb4dffd630cff7f87",
+    "change": "unchanged",
+    "current_sha256": "70ba47b6d53812ed67eed8ab703f6a69bf16530c149942bbb4dffd630cff7f87",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/change-manifest-v2.schema.json",
+    "path": "skills/prototype-design-workflow/assets/change-manifest-v2.schema.json",
+    "original_sha256": "ae7692ce693f98d1313f181677930a1fa1b388d87ec56e70bded8df52be9c5db",
+    "import_sha256": "ae7692ce693f98d1313f181677930a1fa1b388d87ec56e70bded8df52be9c5db",
+    "change": "unchanged",
+    "current_sha256": "ae7692ce693f98d1313f181677930a1fa1b388d87ec56e70bded8df52be9c5db",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/change-manifest-v3.schema.json",
+    "path": "skills/prototype-design-workflow/assets/change-manifest-v3.schema.json",
+    "original_sha256": "7e6901f637bfff2dc284db2b38541f3d6c47c88bb4a0511e7c5465c9b871d84b",
+    "import_sha256": "7e6901f637bfff2dc284db2b38541f3d6c47c88bb4a0511e7c5465c9b871d84b",
+    "change": "unchanged",
+    "current_sha256": "7e6901f637bfff2dc284db2b38541f3d6c47c88bb4a0511e7c5465c9b871d84b",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/change-manifest.schema.json",
+    "path": "skills/prototype-design-workflow/assets/change-manifest.schema.json",
+    "original_sha256": "f65e672a4728dcd5ffd5195fb3413992a4f8522bb47a03ebe399ad95742ed2b1",
+    "import_sha256": "f65e672a4728dcd5ffd5195fb3413992a4f8522bb47a03ebe399ad95742ed2b1",
+    "change": "unchanged",
+    "current_sha256": "f65e672a4728dcd5ffd5195fb3413992a4f8522bb47a03ebe399ad95742ed2b1",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/package-lock.json",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/package-lock.json",
+    "original_sha256": "6ce12a0992e68f68ca1d18d933b4de6a1ed05a27e3d4643fe5609dd87e53f550",
+    "import_sha256": "6ce12a0992e68f68ca1d18d933b4de6a1ed05a27e3d4643fe5609dd87e53f550",
+    "change": "unchanged",
+    "current_sha256": "6ce12a0992e68f68ca1d18d933b4de6a1ed05a27e3d4643fe5609dd87e53f550",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/package.json",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/package.json",
+    "original_sha256": "cb2f8989b75f05b7de3e0aed728868bbc14f9975e8076c5618ecda49d71735e6",
+    "import_sha256": "cb2f8989b75f05b7de3e0aed728868bbc14f9975e8076c5618ecda49d71735e6",
+    "change": "unchanged",
+    "current_sha256": "cb2f8989b75f05b7de3e0aed728868bbc14f9975e8076c5618ecda49d71735e6",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/scripts/audit-anchors.mjs",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/scripts/audit-anchors.mjs",
+    "original_sha256": "4b8edf78ecfd7f65412bb2be4f414867a661e6ec23650ec55edd22d891aad0c1",
+    "import_sha256": "4b8edf78ecfd7f65412bb2be4f414867a661e6ec23650ec55edd22d891aad0c1",
+    "change": "unchanged",
+    "current_sha256": "4b8edf78ecfd7f65412bb2be4f414867a661e6ec23650ec55edd22d891aad0c1",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/scripts/audit-lineage-baseline-runtime.mjs",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/scripts/audit-lineage-baseline-runtime.mjs",
+    "original_sha256": "23f0d693e4d8b72ee1fa2596319b2fbc530f0999864ea54dc50b5eb35db8b520",
+    "import_sha256": "23f0d693e4d8b72ee1fa2596319b2fbc530f0999864ea54dc50b5eb35db8b520",
+    "change": "unchanged",
+    "current_sha256": "23f0d693e4d8b72ee1fa2596319b2fbc530f0999864ea54dc50b5eb35db8b520",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/scripts/audit-reader-runtime.mjs",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/scripts/audit-reader-runtime.mjs",
+    "original_sha256": "f9a0f498a578a370133a5ed3920876b113513507da6d464299ec109649207a4b",
+    "import_sha256": "f9a0f498a578a370133a5ed3920876b113513507da6d464299ec109649207a4b",
+    "change": "unchanged",
+    "current_sha256": "f9a0f498a578a370133a5ed3920876b113513507da6d464299ec109649207a4b",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/scripts/build-snapshot.mjs",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/scripts/build-snapshot.mjs",
+    "original_sha256": "630e227db0e5fd11d9ed973947863f8903ac10c9a7bf4f2dfa48ed73a8267ec3",
+    "import_sha256": "630e227db0e5fd11d9ed973947863f8903ac10c9a7bf4f2dfa48ed73a8267ec3",
+    "change": "unchanged",
+    "current_sha256": "630e227db0e5fd11d9ed973947863f8903ac10c9a7bf4f2dfa48ed73a8267ec3",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/scripts/validate-manifest.mjs",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/scripts/validate-manifest.mjs",
+    "original_sha256": "aa56fef3cc5071313261bbd9f1a33b6d251b8cac9b95d6b3ddac439e75ad9539",
+    "import_sha256": "aa56fef3cc5071313261bbd9f1a33b6d251b8cac9b95d6b3ddac439e75ad9539",
+    "change": "unchanged",
+    "current_sha256": "aa56fef3cc5071313261bbd9f1a33b6d251b8cac9b95d6b3ddac439e75ad9539",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/bridge.mjs",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/bridge.mjs",
+    "original_sha256": "6e90d07b11e37b8b4de52c92c1e0f2cf8c9ff2426984eccac6accd9682e94c73",
+    "import_sha256": "6e90d07b11e37b8b4de52c92c1e0f2cf8c9ff2426984eccac6accd9682e94c73",
+    "change": "unchanged",
+    "current_sha256": "6e90d07b11e37b8b4de52c92c1e0f2cf8c9ff2426984eccac6accd9682e94c73",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/connector.mjs",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/connector.mjs",
+    "original_sha256": "79fea3b4bd0f472cd01f06f072e45fe683bc02fbd70986c5f101e79d7ad925b5",
+    "import_sha256": "79fea3b4bd0f472cd01f06f072e45fe683bc02fbd70986c5f101e79d7ad925b5",
+    "change": "unchanged",
+    "current_sha256": "79fea3b4bd0f472cd01f06f072e45fe683bc02fbd70986c5f101e79d7ad925b5",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/contract-v2.mjs",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/contract-v2.mjs",
+    "original_sha256": "e846502114e7e5934e0dca094fcf2c0a5d542e649b1469f849da34f142d9523b",
+    "import_sha256": "e846502114e7e5934e0dca094fcf2c0a5d542e649b1469f849da34f142d9523b",
+    "change": "unchanged",
+    "current_sha256": "e846502114e7e5934e0dca094fcf2c0a5d542e649b1469f849da34f142d9523b",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/contract-v3.mjs",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/contract-v3.mjs",
+    "original_sha256": "347e9dc1bdf837a1b4c008dccdf88ef82970d18d75393c26fa8b81c7ad494809",
+    "import_sha256": "347e9dc1bdf837a1b4c008dccdf88ef82970d18d75393c26fa8b81c7ad494809",
+    "change": "unchanged",
+    "current_sha256": "347e9dc1bdf837a1b4c008dccdf88ef82970d18d75393c26fa8b81c7ad494809",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/contract.mjs",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/contract.mjs",
+    "original_sha256": "ea7aa39f60083ae25b01fa08de04715d626a8b2a11a3ad7d5a02ee74d4d44689",
+    "import_sha256": "ea7aa39f60083ae25b01fa08de04715d626a8b2a11a3ad7d5a02ee74d4d44689",
+    "change": "unchanged",
+    "current_sha256": "ea7aa39f60083ae25b01fa08de04715d626a8b2a11a3ad7d5a02ee74d4d44689",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/frozen-review-migration.mjs",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/frozen-review-migration.mjs",
+    "original_sha256": "53bb8d2f837d80727fa635857e107c6f88164d43b9519d7fbd44fbfba721f268",
+    "import_sha256": "53bb8d2f837d80727fa635857e107c6f88164d43b9519d7fbd44fbfba721f268",
+    "change": "unchanged",
+    "current_sha256": "53bb8d2f837d80727fa635857e107c6f88164d43b9519d7fbd44fbfba721f268",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/lineage.mjs",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/lineage.mjs",
+    "original_sha256": "3abd2f2cbb6017903c7cbf3d193b9eb75f3443312cbf65516af2d40a80526545",
+    "import_sha256": "3abd2f2cbb6017903c7cbf3d193b9eb75f3443312cbf65516af2d40a80526545",
+    "change": "unchanged",
+    "current_sha256": "3abd2f2cbb6017903c7cbf3d193b9eb75f3443312cbf65516af2d40a80526545",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/main.mjs",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/main.mjs",
+    "original_sha256": "630b87166900672c613a5bee72ac2a9a52fe463960e9e05976d4846fa044365a",
+    "import_sha256": "630b87166900672c613a5bee72ac2a9a52fe463960e9e05976d4846fa044365a",
+    "change": "unchanged",
+    "current_sha256": "630b87166900672c613a5bee72ac2a9a52fe463960e9e05976d4846fa044365a",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/pending-reconciliation.mjs",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/pending-reconciliation.mjs",
+    "original_sha256": "8981551e1e5a0d31eb94ce159ee2f92b3d5513b5ccb9d77c787c0f5ba7d83307",
+    "import_sha256": "8981551e1e5a0d31eb94ce159ee2f92b3d5513b5ccb9d77c787c0f5ba7d83307",
+    "change": "unchanged",
+    "current_sha256": "8981551e1e5a0d31eb94ce159ee2f92b3d5513b5ccb9d77c787c0f5ba7d83307",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/render.mjs",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/render.mjs",
+    "original_sha256": "9a8437320666636e6efd0cbf6002939549e9641aee66436ff164051434836216",
+    "import_sha256": "9a8437320666636e6efd0cbf6002939549e9641aee66436ff164051434836216",
+    "change": "unchanged",
+    "current_sha256": "9a8437320666636e6efd0cbf6002939549e9641aee66436ff164051434836216",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/scope-evidence.mjs",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/scope-evidence.mjs",
+    "original_sha256": "a9c627066da57f8db818dba14cfbf0b05bbb82ded0ef7f3201c690339dddd420",
+    "import_sha256": "a9c627066da57f8db818dba14cfbf0b05bbb82ded0ef7f3201c690339dddd420",
+    "change": "unchanged",
+    "current_sha256": "a9c627066da57f8db818dba14cfbf0b05bbb82ded0ef7f3201c690339dddd420",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/sha256.mjs",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/sha256.mjs",
+    "original_sha256": "eace6bf9560b0f0718bca0502cca8e8f460ab0f1f10406ff3b4c81ae6d269468",
+    "import_sha256": "eace6bf9560b0f0718bca0502cca8e8f460ab0f1f10406ff3b4c81ae6d269468",
+    "change": "unchanged",
+    "current_sha256": "eace6bf9560b0f0718bca0502cca8e8f460ab0f1f10406ff3b4c81ae6d269468",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/state-store.mjs",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/state-store.mjs",
+    "original_sha256": "c8070a1b4ecef35dc039798ffc58a6721360121daef245d605fd3a5a862bfa7b",
+    "import_sha256": "c8070a1b4ecef35dc039798ffc58a6721360121daef245d605fd3a5a862bfa7b",
+    "change": "unchanged",
+    "current_sha256": "c8070a1b4ecef35dc039798ffc58a6721360121daef245d605fd3a5a862bfa7b",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/surface-snapshot.mjs",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/surface-snapshot.mjs",
+    "original_sha256": "97d2ac0529899385f2484a2c60d3bd1a9772749a23d6c4447a257ef3c069591d",
+    "import_sha256": "97d2ac0529899385f2484a2c60d3bd1a9772749a23d6c4447a257ef3c069591d",
+    "change": "unchanged",
+    "current_sha256": "97d2ac0529899385f2484a2c60d3bd1a9772749a23d6c4447a257ef3c069591d",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/surface-state.mjs",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/src/reader/surface-state.mjs",
+    "original_sha256": "19237d7596d23cbbef8ddb0629f1933e0703cf782a550a913adc6d1879ae3924",
+    "import_sha256": "19237d7596d23cbbef8ddb0629f1933e0703cf782a550a913adc6d1879ae3924",
+    "change": "unchanged",
+    "current_sha256": "19237d7596d23cbbef8ddb0629f1933e0703cf782a550a913adc6d1879ae3924",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/src/schema/change-manifest-v2.schema.json",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/src/schema/change-manifest-v2.schema.json",
+    "original_sha256": "ae7692ce693f98d1313f181677930a1fa1b388d87ec56e70bded8df52be9c5db",
+    "import_sha256": "ae7692ce693f98d1313f181677930a1fa1b388d87ec56e70bded8df52be9c5db",
+    "change": "unchanged",
+    "current_sha256": "ae7692ce693f98d1313f181677930a1fa1b388d87ec56e70bded8df52be9c5db",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/src/schema/change-manifest-v3.schema.json",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/src/schema/change-manifest-v3.schema.json",
+    "original_sha256": "7e6901f637bfff2dc284db2b38541f3d6c47c88bb4a0511e7c5465c9b871d84b",
+    "import_sha256": "7e6901f637bfff2dc284db2b38541f3d6c47c88bb4a0511e7c5465c9b871d84b",
+    "change": "unchanged",
+    "current_sha256": "7e6901f637bfff2dc284db2b38541f3d6c47c88bb4a0511e7c5465c9b871d84b",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/src/schema/change-manifest.schema.json",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/src/schema/change-manifest.schema.json",
+    "original_sha256": "f65e672a4728dcd5ffd5195fb3413992a4f8522bb47a03ebe399ad95742ed2b1",
+    "import_sha256": "f65e672a4728dcd5ffd5195fb3413992a4f8522bb47a03ebe399ad95742ed2b1",
+    "change": "unchanged",
+    "current_sha256": "f65e672a4728dcd5ffd5195fb3413992a4f8522bb47a03ebe399ad95742ed2b1",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/src/shell.html",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/src/shell.html",
+    "original_sha256": "e37dd2fd3d87cc6cf2d33806d6b5bba94aad16cd371cf57604508dc5261b786c",
+    "import_sha256": "e37dd2fd3d87cc6cf2d33806d6b5bba94aad16cd371cf57604508dc5261b786c",
+    "change": "unchanged",
+    "current_sha256": "e37dd2fd3d87cc6cf2d33806d6b5bba94aad16cd371cf57604508dc5261b786c",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/developer-reader-shell/src/styles/reader.css",
+    "path": "skills/prototype-design-workflow/assets/developer-reader-shell/src/styles/reader.css",
+    "original_sha256": "657e14bcb4630afa41e5e2c698a98430a81f32a2f039cfbe006a323d609a27fe",
+    "import_sha256": "657e14bcb4630afa41e5e2c698a98430a81f32a2f039cfbe006a323d609a27fe",
+    "change": "unchanged",
+    "current_sha256": "657e14bcb4630afa41e5e2c698a98430a81f32a2f039cfbe006a323d609a27fe",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/evidence-bundle-template.json",
+    "path": "skills/prototype-design-workflow/assets/evidence-bundle-template.json",
+    "original_sha256": "1430ca6e82825caf50759e2359b1d4c0e3efb97014990d75f1a5e0db13a57b6f",
+    "import_sha256": "1430ca6e82825caf50759e2359b1d4c0e3efb97014990d75f1a5e0db13a57b6f",
+    "change": "unchanged",
+    "current_sha256": "1430ca6e82825caf50759e2359b1d4c0e3efb97014990d75f1a5e0db13a57b6f",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/evidence-bundle.schema.json",
+    "path": "skills/prototype-design-workflow/assets/evidence-bundle.schema.json",
+    "original_sha256": "eed3475981eed4f47e822748a5a4aab37218e8f84200f4da7cce447e9ac0afc0",
+    "import_sha256": "eed3475981eed4f47e822748a5a4aab37218e8f84200f4da7cce447e9ac0afc0",
+    "change": "unchanged",
+    "current_sha256": "eed3475981eed4f47e822748a5a4aab37218e8f84200f4da7cce447e9ac0afc0",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/independent-review-template.json",
+    "path": "skills/prototype-design-workflow/assets/independent-review-template.json",
+    "original_sha256": "627fcecd3d78f96eb461b6bbbaa86cc6f78fa9848b3060cd965804073cc91984",
+    "import_sha256": "627fcecd3d78f96eb461b6bbbaa86cc6f78fa9848b3060cd965804073cc91984",
+    "change": "unchanged",
+    "current_sha256": "627fcecd3d78f96eb461b6bbbaa86cc6f78fa9848b3060cd965804073cc91984",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/independent-review-v1.schema.json",
+    "path": "skills/prototype-design-workflow/assets/independent-review-v1.schema.json",
+    "original_sha256": "5354cc97e24758d54fa22f2347d135ee42b999d95324c7abe9bf5bebafe3d524",
+    "import_sha256": "5354cc97e24758d54fa22f2347d135ee42b999d95324c7abe9bf5bebafe3d524",
+    "change": "unchanged",
+    "current_sha256": "5354cc97e24758d54fa22f2347d135ee42b999d95324c7abe9bf5bebafe3d524",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/independent-review.schema.json",
+    "path": "skills/prototype-design-workflow/assets/independent-review.schema.json",
+    "original_sha256": "c32970ce8cb43514c9b0dd71a36c76f9ec2f5bfa49a588c398586ee116b0d6b0",
+    "import_sha256": "c32970ce8cb43514c9b0dd71a36c76f9ec2f5bfa49a588c398586ee116b0d6b0",
+    "change": "unchanged",
+    "current_sha256": "c32970ce8cb43514c9b0dd71a36c76f9ec2f5bfa49a588c398586ee116b0d6b0",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/lineage-baseline-receipt-template.json",
+    "path": "skills/prototype-design-workflow/assets/lineage-baseline-receipt-template.json",
+    "original_sha256": "9d7bba84f01769c6fb7f86c7ae8feaa7dd894ae8234b9611a40cd7181f24c7e8",
+    "import_sha256": "9d7bba84f01769c6fb7f86c7ae8feaa7dd894ae8234b9611a40cd7181f24c7e8",
+    "change": "unchanged",
+    "current_sha256": "9d7bba84f01769c6fb7f86c7ae8feaa7dd894ae8234b9611a40cd7181f24c7e8",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/lineage-baseline-receipt.schema.json",
+    "path": "skills/prototype-design-workflow/assets/lineage-baseline-receipt.schema.json",
+    "original_sha256": "88dcd194c71aa960189da03388f518c282fe38f91073b074be9421cee108ae8e",
+    "import_sha256": "88dcd194c71aa960189da03388f518c282fe38f91073b074be9421cee108ae8e",
+    "change": "unchanged",
+    "current_sha256": "88dcd194c71aa960189da03388f518c282fe38f91073b074be9421cee108ae8e",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/product-convergence-record-template.json",
+    "path": "skills/prototype-design-workflow/assets/product-convergence-record-template.json",
+    "original_sha256": "45f600d6afa2f2387250e5f4c5245b54260ba479b7330c73d1301ffc51cf09ea",
+    "import_sha256": "45f600d6afa2f2387250e5f4c5245b54260ba479b7330c73d1301ffc51cf09ea",
+    "change": "unchanged",
+    "current_sha256": "45f600d6afa2f2387250e5f4c5245b54260ba479b7330c73d1301ffc51cf09ea",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/assets/product-convergence-record.schema.json",
+    "path": "skills/prototype-design-workflow/assets/product-convergence-record.schema.json",
+    "original_sha256": "ec416f5106f896bef4cc074e78ec72cc44c8ac0dd017c12256b6b5771cfcaea4",
+    "import_sha256": "ec416f5106f896bef4cc074e78ec72cc44c8ac0dd017c12256b6b5771cfcaea4",
+    "change": "unchanged",
+    "current_sha256": "ec416f5106f896bef4cc074e78ec72cc44c8ac0dd017c12256b6b5771cfcaea4",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/evals/evals.json",
+    "path": "skills/prototype-design-workflow/evals/evals.json",
+    "original_sha256": "4b9992c4b7adc4d236f1df558abd6394c43134da7fb924e184c27116e3a02f29",
+    "import_sha256": "4b9992c4b7adc4d236f1df558abd6394c43134da7fb924e184c27116e3a02f29",
+    "change": "unchanged",
+    "current_sha256": "4b9992c4b7adc4d236f1df558abd6394c43134da7fb924e184c27116e3a02f29",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/references/developer-readable-prototype.md",
+    "path": "skills/prototype-design-workflow/references/developer-readable-prototype.md",
+    "original_sha256": "69613e161e1dbf2ba7fbc5dd4146c9e88c39c5eb05663c30e2aeacdc06f8ff78",
+    "import_sha256": "69613e161e1dbf2ba7fbc5dd4146c9e88c39c5eb05663c30e2aeacdc06f8ff78",
+    "change": "unchanged",
+    "current_sha256": "69613e161e1dbf2ba7fbc5dd4146c9e88c39c5eb05663c30e2aeacdc06f8ff78",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/references/host-codex.md",
+    "path": "skills/prototype-design-workflow/references/host-codex.md",
+    "original_sha256": "0a01478b065cdd659e20f3309a3de28d72361e9813dbe425ddebb2e44a103b1a",
+    "import_sha256": "0a01478b065cdd659e20f3309a3de28d72361e9813dbe425ddebb2e44a103b1a",
+    "change": "unchanged",
+    "current_sha256": "0a01478b065cdd659e20f3309a3de28d72361e9813dbe425ddebb2e44a103b1a",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/references/local-source-and-first-generation.md",
+    "path": "skills/prototype-design-workflow/references/local-source-and-first-generation.md",
+    "original_sha256": "8f35c81c85e4bcf5a1236248a2837b10d08e9c03303369465e4603ab88b99522",
+    "import_sha256": "8f35c81c85e4bcf5a1236248a2837b10d08e9c03303369465e4603ab88b99522",
+    "change": "unchanged",
+    "current_sha256": "8f35c81c85e4bcf5a1236248a2837b10d08e9c03303369465e4603ab88b99522",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/scripts/create-lineage-baseline-receipt.mjs",
+    "path": "skills/prototype-design-workflow/scripts/create-lineage-baseline-receipt.mjs",
+    "original_sha256": "b0a422b6e30e00b15cd9bc15257becce50344d47588de8f698436769881f2800",
+    "import_sha256": "b0a422b6e30e00b15cd9bc15257becce50344d47588de8f698436769881f2800",
+    "change": "unchanged",
+    "current_sha256": "b0a422b6e30e00b15cd9bc15257becce50344d47588de8f698436769881f2800",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/scripts/freeze-product-convergence.mjs",
+    "path": "skills/prototype-design-workflow/scripts/freeze-product-convergence.mjs",
+    "original_sha256": "5e91d4b77d2573ad358b345d66a692dbe73e16ea2b83577b3b39368fe6dd0557",
+    "import_sha256": "5e91d4b77d2573ad358b345d66a692dbe73e16ea2b83577b3b39368fe6dd0557",
+    "change": "unchanged",
+    "current_sha256": "5e91d4b77d2573ad358b345d66a692dbe73e16ea2b83577b3b39368fe6dd0557",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/scripts/migrate-frozen-review.mjs",
+    "path": "skills/prototype-design-workflow/scripts/migrate-frozen-review.mjs",
+    "original_sha256": "ca4aeb03a968ee41a268cc8c524d5b14c214bb7296130ca846d925374bef681d",
+    "import_sha256": "ca4aeb03a968ee41a268cc8c524d5b14c214bb7296130ca846d925374bef681d",
+    "change": "unchanged",
+    "current_sha256": "ca4aeb03a968ee41a268cc8c524d5b14c214bb7296130ca846d925374bef681d",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/scripts/validate-evidence-bundle.mjs",
+    "path": "skills/prototype-design-workflow/scripts/validate-evidence-bundle.mjs",
+    "original_sha256": "bae064dbdf821ae07e75fbd483288dce7b73b9d5f65733b6ffdece7d8f32f61a",
+    "import_sha256": "bae064dbdf821ae07e75fbd483288dce7b73b9d5f65733b6ffdece7d8f32f61a",
+    "change": "unchanged",
+    "current_sha256": "bae064dbdf821ae07e75fbd483288dce7b73b9d5f65733b6ffdece7d8f32f61a",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/scripts/validate-independent-review.mjs",
+    "path": "skills/prototype-design-workflow/scripts/validate-independent-review.mjs",
+    "original_sha256": "4fe79f1889e2293d645371252e5406d7761ceb32d584e4cf9f6222a469e2b52b",
+    "import_sha256": "4fe79f1889e2293d645371252e5406d7761ceb32d584e4cf9f6222a469e2b52b",
+    "change": "unchanged",
+    "current_sha256": "4fe79f1889e2293d645371252e5406d7761ceb32d584e4cf9f6222a469e2b52b",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/scripts/validate-prototype-handoff.mjs",
+    "path": "skills/prototype-design-workflow/scripts/validate-prototype-handoff.mjs",
+    "original_sha256": "b10a1e549d2556b28da782f731b2ae9a0bf50998db62adefce682f522f2fdd33",
+    "import_sha256": "b10a1e549d2556b28da782f731b2ae9a0bf50998db62adefce682f522f2fdd33",
+    "change": "unchanged",
+    "current_sha256": "b10a1e549d2556b28da782f731b2ae9a0bf50998db62adefce682f522f2fdd33",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/scripts/validate-snapshot-review.mjs",
+    "path": "skills/prototype-design-workflow/scripts/validate-snapshot-review.mjs",
+    "original_sha256": "ffebf504e684e4ee26d74032787a72e53c795a36943ac2801abb4265841b19d4",
+    "import_sha256": "ffebf504e684e4ee26d74032787a72e53c795a36943ac2801abb4265841b19d4",
+    "change": "unchanged",
+    "current_sha256": "ffebf504e684e4ee26d74032787a72e53c795a36943ac2801abb4265841b19d4",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/tests/developer-readable-assets.test.mjs",
+    "path": "skills/prototype-design-workflow/tests/developer-readable-assets.test.mjs",
+    "original_sha256": "b51b8b3811eafa65afb134ff0801f1e84cb9e492891db76b0aa0ca28d7c50a6c",
+    "import_sha256": "b51b8b3811eafa65afb134ff0801f1e84cb9e492891db76b0aa0ca28d7c50a6c",
+    "change": "unchanged",
+    "current_sha256": "b51b8b3811eafa65afb134ff0801f1e84cb9e492891db76b0aa0ca28d7c50a6c",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/tests/first-generation.test.mjs",
+    "path": "skills/prototype-design-workflow/tests/first-generation.test.mjs",
+    "original_sha256": "66a2cf8943a5050b1acda6e7e5250f8e185b156c912ce2d600f0f0328a130e0a",
+    "import_sha256": "66a2cf8943a5050b1acda6e7e5250f8e185b156c912ce2d600f0f0328a130e0a",
+    "change": "unchanged",
+    "current_sha256": "66a2cf8943a5050b1acda6e7e5250f8e185b156c912ce2d600f0f0328a130e0a",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/tests/frozen-review-migration.test.mjs",
+    "path": "skills/prototype-design-workflow/tests/frozen-review-migration.test.mjs",
+    "original_sha256": "06dd5bad70955832f3b7ef0e645d6f9386f0f8fd5c0ac6b5b61a8a0768a579dd",
+    "import_sha256": "06dd5bad70955832f3b7ef0e645d6f9386f0f8fd5c0ac6b5b61a8a0768a579dd",
+    "change": "unchanged",
+    "current_sha256": "06dd5bad70955832f3b7ef0e645d6f9386f0f8fd5c0ac6b5b61a8a0768a579dd",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/tests/independent-review-v2.test.mjs",
+    "path": "skills/prototype-design-workflow/tests/independent-review-v2.test.mjs",
+    "original_sha256": "993440651ecbc89f386c5e5a06adbd6480e1b4d9a2e842f7a7f8da9081e6ad20",
+    "import_sha256": "993440651ecbc89f386c5e5a06adbd6480e1b4d9a2e842f7a7f8da9081e6ad20",
+    "change": "unchanged",
+    "current_sha256": "993440651ecbc89f386c5e5a06adbd6480e1b4d9a2e842f7a7f8da9081e6ad20",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/tests/lineage-baseline-receipt.test.mjs",
+    "path": "skills/prototype-design-workflow/tests/lineage-baseline-receipt.test.mjs",
+    "original_sha256": "199067e9f07ca531b4acbab47216f8d045a7615d5f7080545efb9e8b9a10e289",
+    "import_sha256": "199067e9f07ca531b4acbab47216f8d045a7615d5f7080545efb9e8b9a10e289",
+    "change": "unchanged",
+    "current_sha256": "199067e9f07ca531b4acbab47216f8d045a7615d5f7080545efb9e8b9a10e289",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/tests/lineage-overview.test.mjs",
+    "path": "skills/prototype-design-workflow/tests/lineage-overview.test.mjs",
+    "original_sha256": "1beba6fdc5a31e6098b67eb88f281d63ebf3fdfa528c4c8fa9125f8232296d38",
+    "import_sha256": "1beba6fdc5a31e6098b67eb88f281d63ebf3fdfa528c4c8fa9125f8232296d38",
+    "change": "unchanged",
+    "current_sha256": "1beba6fdc5a31e6098b67eb88f281d63ebf3fdfa528c4c8fa9125f8232296d38",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/tests/lineage.test.mjs",
+    "path": "skills/prototype-design-workflow/tests/lineage.test.mjs",
+    "original_sha256": "30875a19d4131ab69c3c12e6e7750868d5ee98b70b52de24d8af8d701beb6891",
+    "import_sha256": "30875a19d4131ab69c3c12e6e7750868d5ee98b70b52de24d8af8d701beb6891",
+    "change": "unchanged",
+    "current_sha256": "30875a19d4131ab69c3c12e6e7750868d5ee98b70b52de24d8af8d701beb6891",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/tests/manifest-v4.test.mjs",
+    "path": "skills/prototype-design-workflow/tests/manifest-v4.test.mjs",
+    "original_sha256": "d63a50a0414e110b669d8b1fad8397646a2f10949f749d92c84a7afbd65726a0",
+    "import_sha256": "d63a50a0414e110b669d8b1fad8397646a2f10949f749d92c84a7afbd65726a0",
+    "change": "unchanged",
+    "current_sha256": "d63a50a0414e110b669d8b1fad8397646a2f10949f749d92c84a7afbd65726a0",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/tests/product-convergence-freeze.test.mjs",
+    "path": "skills/prototype-design-workflow/tests/product-convergence-freeze.test.mjs",
+    "original_sha256": "acec2dcd8f6cf3131f23ad00265fba3340086ac6ac78a466656b8e941da31c5d",
+    "import_sha256": "acec2dcd8f6cf3131f23ad00265fba3340086ac6ac78a466656b8e941da31c5d",
+    "change": "unchanged",
+    "current_sha256": "acec2dcd8f6cf3131f23ad00265fba3340086ac6ac78a466656b8e941da31c5d",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/tests/reader-sha256.test.mjs",
+    "path": "skills/prototype-design-workflow/tests/reader-sha256.test.mjs",
+    "original_sha256": "32277f015f0e499c7d7a3924fb2e1bda71e325e3ab6d2f8fcb7f5db797bec6b7",
+    "import_sha256": "32277f015f0e499c7d7a3924fb2e1bda71e325e3ab6d2f8fcb7f5db797bec6b7",
+    "change": "unchanged",
+    "current_sha256": "32277f015f0e499c7d7a3924fb2e1bda71e325e3ab6d2f8fcb7f5db797bec6b7",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/tests/source-folding.test.mjs",
+    "path": "skills/prototype-design-workflow/tests/source-folding.test.mjs",
+    "original_sha256": "937ef27cae62f042b995390c8322ba70612dadfb52af41ce053610fafbbfd16d",
+    "import_sha256": "937ef27cae62f042b995390c8322ba70612dadfb52af41ce053610fafbbfd16d",
+    "change": "unchanged",
+    "current_sha256": "937ef27cae62f042b995390c8322ba70612dadfb52af41ce053610fafbbfd16d",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/tests/surface-snapshot.test.mjs",
+    "path": "skills/prototype-design-workflow/tests/surface-snapshot.test.mjs",
+    "original_sha256": "3f0963a9d4ef647a0c93ac908820c2284895bcec9fcd27eb9ef3b422565bf020",
+    "import_sha256": "3f0963a9d4ef647a0c93ac908820c2284895bcec9fcd27eb9ef3b422565bf020",
+    "change": "unchanged",
+    "current_sha256": "3f0963a9d4ef647a0c93ac908820c2284895bcec9fcd27eb9ef3b422565bf020",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/prototype-design-workflow/tests/validator.test.mjs",
+    "path": "skills/prototype-design-workflow/tests/validator.test.mjs",
+    "original_sha256": "0e66019aa12013d02b1ee3f86db087efe3f6c5118bd3f68e99ce4c434cecee68",
+    "import_sha256": "0e66019aa12013d02b1ee3f86db087efe3f6c5118bd3f68e99ce4c434cecee68",
+    "change": "unchanged",
+    "current_sha256": "0e66019aa12013d02b1ee3f86db087efe3f6c5118bd3f68e99ce4c434cecee68",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/__init__.py",
+    "path": "runtime/enterprise_prd/__init__.py",
+    "original_sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+    "import_sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+    "change": "unchanged",
+    "current_sha256": "91447944015cec709e8aa7655f7e9d64e1e4508e7023a57fe3746911c0fc6fed",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/adapters/__init__.py",
+    "path": "runtime/enterprise_prd/adapters/__init__.py",
+    "original_sha256": "21796492b93e7a44442fa41ce155cec090a1398feae02d0ff8cddfd091ca7946",
+    "import_sha256": "21796492b93e7a44442fa41ce155cec090a1398feae02d0ff8cddfd091ca7946",
+    "change": "unchanged",
+    "current_sha256": "21796492b93e7a44442fa41ce155cec090a1398feae02d0ff8cddfd091ca7946",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/adapters/base.py",
+    "path": "runtime/enterprise_prd/adapters/base.py",
+    "original_sha256": "3093bb3d0fc1d1b75cbc9f4faba0f4727a64c6a2f30d8312b517479e16843011",
+    "import_sha256": "3093bb3d0fc1d1b75cbc9f4faba0f4727a64c6a2f30d8312b517479e16843011",
+    "change": "unchanged",
+    "current_sha256": "3093bb3d0fc1d1b75cbc9f4faba0f4727a64c6a2f30d8312b517479e16843011",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/adapters/feishu.py",
+    "path": "runtime/enterprise_prd/adapters/feishu.py",
+    "original_sha256": "346257f10a97a0e393333500df23bbf6b849200ffb7d6755bb49a808abf331d6",
+    "import_sha256": "346257f10a97a0e393333500df23bbf6b849200ffb7d6755bb49a808abf331d6",
+    "change": "unchanged",
+    "current_sha256": "346257f10a97a0e393333500df23bbf6b849200ffb7d6755bb49a808abf331d6",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/adapters/feishu_readonly.py",
+    "path": "runtime/enterprise_prd/adapters/feishu_readonly.py",
+    "original_sha256": "fd57404e6bdaa65e795f3e812ecc85c56ecb04670e7434d8bf734f89191d3aae",
+    "import_sha256": "fd57404e6bdaa65e795f3e812ecc85c56ecb04670e7434d8bf734f89191d3aae",
+    "change": "unchanged",
+    "current_sha256": "fd57404e6bdaa65e795f3e812ecc85c56ecb04670e7434d8bf734f89191d3aae",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/adapters/local.py",
+    "path": "runtime/enterprise_prd/adapters/local.py",
+    "original_sha256": "942ba46e8f12a053bd31de4a655e78e6f2b40ee756d9620509b05e970e7a45fc",
+    "import_sha256": "942ba46e8f12a053bd31de4a655e78e6f2b40ee756d9620509b05e970e7a45fc",
+    "change": "unchanged",
+    "current_sha256": "942ba46e8f12a053bd31de4a655e78e6f2b40ee756d9620509b05e970e7a45fc",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/baseline_registry/__init__.py",
+    "path": "runtime/enterprise_prd/baseline_registry/__init__.py",
+    "original_sha256": "2c6b9e151d1a33ac912d764c3642d07068bdbc98b111922d13f1b3628f6a6c39",
+    "import_sha256": "2c6b9e151d1a33ac912d764c3642d07068bdbc98b111922d13f1b3628f6a6c39",
+    "change": "unchanged",
+    "current_sha256": "2c6b9e151d1a33ac912d764c3642d07068bdbc98b111922d13f1b3628f6a6c39",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/baseline_registry/contracts.py",
+    "path": "runtime/enterprise_prd/baseline_registry/contracts.py",
+    "original_sha256": "cd590f8dd02c49d9d50d4449126e63e244f3bf70965b9e2045ec8efd9e075cef",
+    "import_sha256": "cd590f8dd02c49d9d50d4449126e63e244f3bf70965b9e2045ec8efd9e075cef",
+    "change": "unchanged",
+    "current_sha256": "cd590f8dd02c49d9d50d4449126e63e244f3bf70965b9e2045ec8efd9e075cef",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/baseline_registry/directory_view.py",
+    "path": "runtime/enterprise_prd/baseline_registry/directory_view.py",
+    "original_sha256": "772b6e5315733af63a3aed2e8222ebe5efaa36a3997bcf6bb61d4313ddaf3b98",
+    "import_sha256": "772b6e5315733af63a3aed2e8222ebe5efaa36a3997bcf6bb61d4313ddaf3b98",
+    "change": "unchanged",
+    "current_sha256": "772b6e5315733af63a3aed2e8222ebe5efaa36a3997bcf6bb61d4313ddaf3b98",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/baseline_registry/errors.py",
+    "path": "runtime/enterprise_prd/baseline_registry/errors.py",
+    "original_sha256": "9e29df10a8187a95df9524679bac65f51a9f38a96c354286bd6411b6847200ef",
+    "import_sha256": "9e29df10a8187a95df9524679bac65f51a9f38a96c354286bd6411b6847200ef",
+    "change": "unchanged",
+    "current_sha256": "9e29df10a8187a95df9524679bac65f51a9f38a96c354286bd6411b6847200ef",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/baseline_registry/manifest.py",
+    "path": "runtime/enterprise_prd/baseline_registry/manifest.py",
+    "original_sha256": "827188eb84e05b97a584c4ed705f2741a0aa4a3ee98cd7166e7db1f793145d01",
+    "import_sha256": "827188eb84e05b97a584c4ed705f2741a0aa4a3ee98cd7166e7db1f793145d01",
+    "change": "unchanged",
+    "current_sha256": "827188eb84e05b97a584c4ed705f2741a0aa4a3ee98cd7166e7db1f793145d01",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/baseline_registry/resolver.py",
+    "path": "runtime/enterprise_prd/baseline_registry/resolver.py",
+    "original_sha256": "79a6692284fbb0ba2881fb1f93709ee41fbd58fd34b377292876888a33fef1e8",
+    "import_sha256": "79a6692284fbb0ba2881fb1f93709ee41fbd58fd34b377292876888a33fef1e8",
+    "change": "unchanged",
+    "current_sha256": "79a6692284fbb0ba2881fb1f93709ee41fbd58fd34b377292876888a33fef1e8",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/baseline_registry/snapshot.py",
+    "path": "runtime/enterprise_prd/baseline_registry/snapshot.py",
+    "original_sha256": "3fb3c3a7e08628f06c059a7638439689f0c4d7a8b48b16368acb38dee2085a6c",
+    "import_sha256": "3fb3c3a7e08628f06c059a7638439689f0c4d7a8b48b16368acb38dee2085a6c",
+    "change": "unchanged",
+    "current_sha256": "3fb3c3a7e08628f06c059a7638439689f0c4d7a8b48b16368acb38dee2085a6c",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/baseline_registry/store.py",
+    "path": "runtime/enterprise_prd/baseline_registry/store.py",
+    "original_sha256": "6bb8d1105f6b4e5811a58b80b9e26eadd1cc14089dc03a60da0bd505e5e86aec",
+    "import_sha256": "6bb8d1105f6b4e5811a58b80b9e26eadd1cc14089dc03a60da0bd505e5e86aec",
+    "change": "unchanged",
+    "current_sha256": "6bb8d1105f6b4e5811a58b80b9e26eadd1cc14089dc03a60da0bd505e5e86aec",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/bootstrap.py",
+    "path": "runtime/enterprise_prd/bootstrap.py",
+    "original_sha256": "59ab3e4f2e843d772cdf1068c4df2d883393e41535948913f609eb74a562a473",
+    "import_sha256": "59ab3e4f2e843d772cdf1068c4df2d883393e41535948913f609eb74a562a473",
+    "change": "unchanged",
+    "current_sha256": "59ab3e4f2e843d772cdf1068c4df2d883393e41535948913f609eb74a562a473",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/canonical.py",
+    "path": "runtime/enterprise_prd/canonical.py",
+    "original_sha256": "10f016b36d95691718e62ce0993ca912767703ca02304c4d5ca2c47273abee1c",
+    "import_sha256": "10f016b36d95691718e62ce0993ca912767703ca02304c4d5ca2c47273abee1c",
+    "change": "unchanged",
+    "current_sha256": "10f016b36d95691718e62ce0993ca912767703ca02304c4d5ca2c47273abee1c",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/cli.py",
+    "path": "runtime/enterprise_prd/cli.py",
+    "original_sha256": "539d3526e57e66ba565902a4d8230bbcda8cabcfb4b0a2a2e33a145c5409e572",
+    "import_sha256": "539d3526e57e66ba565902a4d8230bbcda8cabcfb4b0a2a2e33a145c5409e572",
+    "change": "unchanged",
+    "current_sha256": "539d3526e57e66ba565902a4d8230bbcda8cabcfb4b0a2a2e33a145c5409e572",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/contracts.py",
+    "path": "runtime/enterprise_prd/contracts.py",
+    "original_sha256": "0d6361cdf7f87632edbd8ecae9323e7cf505954afad8d33d10230373d32402dd",
+    "import_sha256": "0d6361cdf7f87632edbd8ecae9323e7cf505954afad8d33d10230373d32402dd",
+    "change": "unchanged",
+    "current_sha256": "0d6361cdf7f87632edbd8ecae9323e7cf505954afad8d33d10230373d32402dd",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/diagnostics/__init__.py",
+    "path": "runtime/enterprise_prd/diagnostics/__init__.py",
+    "original_sha256": "a3ef61745c4f9f79959b501d164aaab183b05e603493bc688799ea4b623cc1b1",
+    "import_sha256": "a3ef61745c4f9f79959b501d164aaab183b05e603493bc688799ea4b623cc1b1",
+    "change": "unchanged",
+    "current_sha256": "a3ef61745c4f9f79959b501d164aaab183b05e603493bc688799ea4b623cc1b1",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/diagnostics/feishu_outline_contract_probe.py",
+    "path": "runtime/enterprise_prd/diagnostics/feishu_outline_contract_probe.py",
+    "original_sha256": "b4e35595fb361704add651332caec1290e7b6ab82db871bb0874c941e638b8ab",
+    "import_sha256": "b4e35595fb361704add651332caec1290e7b6ab82db871bb0874c941e638b8ab",
+    "change": "unchanged",
+    "current_sha256": "b4e35595fb361704add651332caec1290e7b6ab82db871bb0874c941e638b8ab",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/errors.py",
+    "path": "runtime/enterprise_prd/errors.py",
+    "original_sha256": "60a4dfa8aac5caee02d8a8ce8ccc9bf281c7101a5d605fdf14e3506c7b2223a4",
+    "import_sha256": "60a4dfa8aac5caee02d8a8ce8ccc9bf281c7101a5d605fdf14e3506c7b2223a4",
+    "change": "unchanged",
+    "current_sha256": "60a4dfa8aac5caee02d8a8ce8ccc9bf281c7101a5d605fdf14e3506c7b2223a4",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/evidence.py",
+    "path": "runtime/enterprise_prd/evidence.py",
+    "original_sha256": "2bc7e1326ead31c34704c13bfa5856430cb864d0f0cbd3bc15fdaa84fc7675fe",
+    "import_sha256": "2bc7e1326ead31c34704c13bfa5856430cb864d0f0cbd3bc15fdaa84fc7675fe",
+    "change": "unchanged",
+    "current_sha256": "2bc7e1326ead31c34704c13bfa5856430cb864d0f0cbd3bc15fdaa84fc7675fe",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/heading_selection.py",
+    "path": "runtime/enterprise_prd/heading_selection.py",
+    "original_sha256": "5ec883088356ccb51aaabcc428bfc097917748fa2460cdf26bd7c221436ef232",
+    "import_sha256": "5ec883088356ccb51aaabcc428bfc097917748fa2460cdf26bd7c221436ef232",
+    "change": "unchanged",
+    "current_sha256": "5ec883088356ccb51aaabcc428bfc097917748fa2460cdf26bd7c221436ef232",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/install.py",
+    "path": "runtime/enterprise_prd/install.py",
+    "original_sha256": "b0b4a31b2cf0617eaa9dfd87083c522491d60f013ad9efb0d8b52c0ed45e07f0",
+    "import_sha256": "b0b4a31b2cf0617eaa9dfd87083c522491d60f013ad9efb0d8b52c0ed45e07f0",
+    "change": "unchanged",
+    "current_sha256": "b0b4a31b2cf0617eaa9dfd87083c522491d60f013ad9efb0d8b52c0ed45e07f0",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/knowledge_onboarding/__init__.py",
+    "path": "runtime/enterprise_prd/knowledge_onboarding/__init__.py",
+    "original_sha256": "ccb5bc9ccfcaf5ca1db2d6d98be539e2af99ea3e5cb1a4001b82de2e224602d4",
+    "import_sha256": "ccb5bc9ccfcaf5ca1db2d6d98be539e2af99ea3e5cb1a4001b82de2e224602d4",
+    "change": "unchanged",
+    "current_sha256": "ccb5bc9ccfcaf5ca1db2d6d98be539e2af99ea3e5cb1a4001b82de2e224602d4",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/knowledge_onboarding/artifacts.py",
+    "path": "runtime/enterprise_prd/knowledge_onboarding/artifacts.py",
+    "original_sha256": "f50d7ebea4b461a836b3eb12cb833a621ec7c8357f0d4425f6262d03902438df",
+    "import_sha256": "f50d7ebea4b461a836b3eb12cb833a621ec7c8357f0d4425f6262d03902438df",
+    "change": "unchanged",
+    "current_sha256": "f50d7ebea4b461a836b3eb12cb833a621ec7c8357f0d4425f6262d03902438df",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/knowledge_onboarding/cli.py",
+    "path": "runtime/enterprise_prd/knowledge_onboarding/cli.py",
+    "original_sha256": "2c27ed19e826fe3d09cce28ce5bc4a65f205b55ba09263a23b398d4f376ce790",
+    "import_sha256": "2c27ed19e826fe3d09cce28ce5bc4a65f205b55ba09263a23b398d4f376ce790",
+    "change": "unchanged",
+    "current_sha256": "2c27ed19e826fe3d09cce28ce5bc4a65f205b55ba09263a23b398d4f376ce790",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/knowledge_onboarding/contracts.py",
+    "path": "runtime/enterprise_prd/knowledge_onboarding/contracts.py",
+    "original_sha256": "c0f4b7a1eb60cbd82cb391d672b672c809eab244844160a8626d8f311aab2ca4",
+    "import_sha256": "c0f4b7a1eb60cbd82cb391d672b672c809eab244844160a8626d8f311aab2ca4",
+    "change": "unchanged",
+    "current_sha256": "c0f4b7a1eb60cbd82cb391d672b672c809eab244844160a8626d8f311aab2ca4",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/knowledge_onboarding/errors.py",
+    "path": "runtime/enterprise_prd/knowledge_onboarding/errors.py",
+    "original_sha256": "8db9a24a51d52d8d3ff8f27e233ffdffe030d412d90c376585f9b43c1a14793f",
+    "import_sha256": "8db9a24a51d52d8d3ff8f27e233ffdffe030d412d90c376585f9b43c1a14793f",
+    "change": "unchanged",
+    "current_sha256": "8db9a24a51d52d8d3ff8f27e233ffdffe030d412d90c376585f9b43c1a14793f",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/knowledge_onboarding/genesis.py",
+    "path": "runtime/enterprise_prd/knowledge_onboarding/genesis.py",
+    "original_sha256": "61eb1be88e4b7c3f2914a46cafbff76f20b0988f7f7e256f7f81ae3db5e6e260",
+    "import_sha256": "61eb1be88e4b7c3f2914a46cafbff76f20b0988f7f7e256f7f81ae3db5e6e260",
+    "change": "unchanged",
+    "current_sha256": "61eb1be88e4b7c3f2914a46cafbff76f20b0988f7f7e256f7f81ae3db5e6e260",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/knowledge_onboarding/governance.py",
+    "path": "runtime/enterprise_prd/knowledge_onboarding/governance.py",
+    "original_sha256": "3062f47d97e26a2c719a4b55991f87e29141bcea5342caad0c32aeba02579ec6",
+    "import_sha256": "3062f47d97e26a2c719a4b55991f87e29141bcea5342caad0c32aeba02579ec6",
+    "change": "unchanged",
+    "current_sha256": "3062f47d97e26a2c719a4b55991f87e29141bcea5342caad0c32aeba02579ec6",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/knowledge_onboarding/proposal.py",
+    "path": "runtime/enterprise_prd/knowledge_onboarding/proposal.py",
+    "original_sha256": "5f912d7e7e7f246a035763dd2b5bfe3529a90d40e8fc31dffc27728901390cf4",
+    "import_sha256": "5f912d7e7e7f246a035763dd2b5bfe3529a90d40e8fc31dffc27728901390cf4",
+    "change": "unchanged",
+    "current_sha256": "5f912d7e7e7f246a035763dd2b5bfe3529a90d40e8fc31dffc27728901390cf4",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/knowledge_onboarding/receipt.py",
+    "path": "runtime/enterprise_prd/knowledge_onboarding/receipt.py",
+    "original_sha256": "67ace3c9641df1113c0d6f189047b9e94ab17a73718aff7e8899e8418c228eba",
+    "import_sha256": "67ace3c9641df1113c0d6f189047b9e94ab17a73718aff7e8899e8418c228eba",
+    "change": "unchanged",
+    "current_sha256": "67ace3c9641df1113c0d6f189047b9e94ab17a73718aff7e8899e8418c228eba",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/knowledge_onboarding/source.py",
+    "path": "runtime/enterprise_prd/knowledge_onboarding/source.py",
+    "original_sha256": "c0f125315b6c851ac0c4701dedc5200c70a28ecf0efbdd59e7e1c2fcbf7c7025",
+    "import_sha256": "c0f125315b6c851ac0c4701dedc5200c70a28ecf0efbdd59e7e1c2fcbf7c7025",
+    "change": "unchanged",
+    "current_sha256": "c0f125315b6c851ac0c4701dedc5200c70a28ecf0efbdd59e7e1c2fcbf7c7025",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/knowledge_onboarding/workflow.py",
+    "path": "runtime/enterprise_prd/knowledge_onboarding/workflow.py",
+    "original_sha256": "100e35903d51f194eba7a11d5dd4be5ddc1e26341e0ff2d6f8b1db717ee6cb26",
+    "import_sha256": "100e35903d51f194eba7a11d5dd4be5ddc1e26341e0ff2d6f8b1db717ee6cb26",
+    "change": "unchanged",
+    "current_sha256": "100e35903d51f194eba7a11d5dd4be5ddc1e26341e0ff2d6f8b1db717ee6cb26",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/knowledge_onboarding/workspace.py",
+    "path": "runtime/enterprise_prd/knowledge_onboarding/workspace.py",
+    "original_sha256": "958a668e5e3b9554f19914cfaecba73b53bc4e8c2b3001a1e5ace6a9bcec59b4",
+    "import_sha256": "958a668e5e3b9554f19914cfaecba73b53bc4e8c2b3001a1e5ace6a9bcec59b4",
+    "change": "unchanged",
+    "current_sha256": "958a668e5e3b9554f19914cfaecba73b53bc4e8c2b3001a1e5ace6a9bcec59b4",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/lark_runner.py",
+    "path": "runtime/enterprise_prd/lark_runner.py",
+    "original_sha256": "5ece51ec873a26d6005fb2b301b312bcf6fa1c77465c88b33bae4ec83d55e5c3",
+    "import_sha256": "5ece51ec873a26d6005fb2b301b312bcf6fa1c77465c88b33bae4ec83d55e5c3",
+    "change": "unchanged",
+    "current_sha256": "5ece51ec873a26d6005fb2b301b312bcf6fa1c77465c88b33bae4ec83d55e5c3",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_context/__init__.py",
+    "path": "runtime/enterprise_prd/local_context/__init__.py",
+    "original_sha256": "c40a8df09a5dee027d055939fdefcb7cc1ccd376e497d2d0634d4ba7b9f0c641",
+    "import_sha256": "c40a8df09a5dee027d055939fdefcb7cc1ccd376e497d2d0634d4ba7b9f0c641",
+    "change": "unchanged",
+    "current_sha256": "c40a8df09a5dee027d055939fdefcb7cc1ccd376e497d2d0634d4ba7b9f0c641",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_context/adapters/__init__.py",
+    "path": "runtime/enterprise_prd/local_context/adapters/__init__.py",
+    "original_sha256": "865dd9a2785feaca78209b0ecb2ff048b395872f6f862d99635ba6263304015d",
+    "import_sha256": "865dd9a2785feaca78209b0ecb2ff048b395872f6f862d99635ba6263304015d",
+    "change": "unchanged",
+    "current_sha256": "865dd9a2785feaca78209b0ecb2ff048b395872f6f862d99635ba6263304015d",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_context/adapters/feishu_reader.py",
+    "path": "runtime/enterprise_prd/local_context/adapters/feishu_reader.py",
+    "original_sha256": "e2891dbe3767ba6acfe339276becc4eebfabc24a61267fe3aee1c49ce2df4930",
+    "import_sha256": "e2891dbe3767ba6acfe339276becc4eebfabc24a61267fe3aee1c49ce2df4930",
+    "change": "unchanged",
+    "current_sha256": "e2891dbe3767ba6acfe339276becc4eebfabc24a61267fe3aee1c49ce2df4930",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_context/adapters/feishu_resolver.py",
+    "path": "runtime/enterprise_prd/local_context/adapters/feishu_resolver.py",
+    "original_sha256": "d6ef4e68d48c50351faf6884cb1a11e46ce70721b4deab2b75e9f5a8b39ce979",
+    "import_sha256": "d6ef4e68d48c50351faf6884cb1a11e46ce70721b4deab2b75e9f5a8b39ce979",
+    "change": "unchanged",
+    "current_sha256": "d6ef4e68d48c50351faf6884cb1a11e46ce70721b4deab2b75e9f5a8b39ce979",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_context/adapters/feishu_smoke.py",
+    "path": "runtime/enterprise_prd/local_context/adapters/feishu_smoke.py",
+    "original_sha256": "69bbd2496094c9d81383fe7e60685a0aa263950cdb5b6dde7fec3c329be35408",
+    "import_sha256": "69bbd2496094c9d81383fe7e60685a0aa263950cdb5b6dde7fec3c329be35408",
+    "change": "unchanged",
+    "current_sha256": "69bbd2496094c9d81383fe7e60685a0aa263950cdb5b6dde7fec3c329be35408",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_context/adapters/feishu_version.py",
+    "path": "runtime/enterprise_prd/local_context/adapters/feishu_version.py",
+    "original_sha256": "d7a93341b7c7addaa86fcfa6ace439a8d99617936653f3d5f70096e0bf75a368",
+    "import_sha256": "d7a93341b7c7addaa86fcfa6ace439a8d99617936653f3d5f70096e0bf75a368",
+    "change": "unchanged",
+    "current_sha256": "d7a93341b7c7addaa86fcfa6ace439a8d99617936653f3d5f70096e0bf75a368",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_context/adapters/fixture.py",
+    "path": "runtime/enterprise_prd/local_context/adapters/fixture.py",
+    "original_sha256": "da9fc9b2af81e8f799597d40b35946f275e33125ccb9717f6838977108248d5b",
+    "import_sha256": "da9fc9b2af81e8f799597d40b35946f275e33125ccb9717f6838977108248d5b",
+    "change": "unchanged",
+    "current_sha256": "da9fc9b2af81e8f799597d40b35946f275e33125ccb9717f6838977108248d5b",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_context/assembler.py",
+    "path": "runtime/enterprise_prd/local_context/assembler.py",
+    "original_sha256": "729ec574c06191685a921f89ac1a3483f012fa305aeaf070f8903324cf9406c5",
+    "import_sha256": "729ec574c06191685a921f89ac1a3483f012fa305aeaf070f8903324cf9406c5",
+    "change": "unchanged",
+    "current_sha256": "729ec574c06191685a921f89ac1a3483f012fa305aeaf070f8903324cf9406c5",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_context/cli.py",
+    "path": "runtime/enterprise_prd/local_context/cli.py",
+    "original_sha256": "97b37636f9bb43b33c69fc3d76c7cf0e0da0a8390981362525a9c821c7ad88d0",
+    "import_sha256": "97b37636f9bb43b33c69fc3d76c7cf0e0da0a8390981362525a9c821c7ad88d0",
+    "change": "unchanged",
+    "current_sha256": "97b37636f9bb43b33c69fc3d76c7cf0e0da0a8390981362525a9c821c7ad88d0",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_context/contracts.py",
+    "path": "runtime/enterprise_prd/local_context/contracts.py",
+    "original_sha256": "1a00e6d8459d12c72cf793ae03989a0a40e705c31d72ab4dfac578718e824ab2",
+    "import_sha256": "1a00e6d8459d12c72cf793ae03989a0a40e705c31d72ab4dfac578718e824ab2",
+    "change": "unchanged",
+    "current_sha256": "1a00e6d8459d12c72cf793ae03989a0a40e705c31d72ab4dfac578718e824ab2",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_context/directory.py",
+    "path": "runtime/enterprise_prd/local_context/directory.py",
+    "original_sha256": "f1c3949958cf2b6b32d55ea4a66121628869e89b81a4e6758624a79d8b3c450d",
+    "import_sha256": "f1c3949958cf2b6b32d55ea4a66121628869e89b81a4e6758624a79d8b3c450d",
+    "change": "unchanged",
+    "current_sha256": "f1c3949958cf2b6b32d55ea4a66121628869e89b81a4e6758624a79d8b3c450d",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_context/errors.py",
+    "path": "runtime/enterprise_prd/local_context/errors.py",
+    "original_sha256": "d03f1962a70e22cbf793c05142c4a81e1fc8f14e79077c095c4c8c513b8a92d0",
+    "import_sha256": "d03f1962a70e22cbf793c05142c4a81e1fc8f14e79077c095c4c8c513b8a92d0",
+    "change": "unchanged",
+    "current_sha256": "d03f1962a70e22cbf793c05142c4a81e1fc8f14e79077c095c4c8c513b8a92d0",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_context/grant.py",
+    "path": "runtime/enterprise_prd/local_context/grant.py",
+    "original_sha256": "2fe0c46a7917e41b53ffad724f6b7a786e3d98909cb8e6b5ccdab582b83b88ea",
+    "import_sha256": "2fe0c46a7917e41b53ffad724f6b7a786e3d98909cb8e6b5ccdab582b83b88ea",
+    "change": "unchanged",
+    "current_sha256": "2fe0c46a7917e41b53ffad724f6b7a786e3d98909cb8e6b5ccdab582b83b88ea",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_context/ports.py",
+    "path": "runtime/enterprise_prd/local_context/ports.py",
+    "original_sha256": "73c8eafc322cd89f26e93b3995e5cb484a79e01fe3e018881eb1a83f5e84aa50",
+    "import_sha256": "73c8eafc322cd89f26e93b3995e5cb484a79e01fe3e018881eb1a83f5e84aa50",
+    "change": "unchanged",
+    "current_sha256": "73c8eafc322cd89f26e93b3995e5cb484a79e01fe3e018881eb1a83f5e84aa50",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_context/runtime.py",
+    "path": "runtime/enterprise_prd/local_context/runtime.py",
+    "original_sha256": "1af071a48fdd1c3d3ac27614e3e14725923dca3cdc6e8aaba582866a48728745",
+    "import_sha256": "1af071a48fdd1c3d3ac27614e3e14725923dca3cdc6e8aaba582866a48728745",
+    "change": "unchanged",
+    "current_sha256": "1af071a48fdd1c3d3ac27614e3e14725923dca3cdc6e8aaba582866a48728745",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_context/snapshot.py",
+    "path": "runtime/enterprise_prd/local_context/snapshot.py",
+    "original_sha256": "8921cecc0ab4be2cf04cf1d5b4e973c269c97cae657add568684fce95d574829",
+    "import_sha256": "8921cecc0ab4be2cf04cf1d5b4e973c269c97cae657add568684fce95d574829",
+    "change": "unchanged",
+    "current_sha256": "8921cecc0ab4be2cf04cf1d5b4e973c269c97cae657add568684fce95d574829",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_context/version.py",
+    "path": "runtime/enterprise_prd/local_context/version.py",
+    "original_sha256": "f39d5856a86994e14cce0a8863202f96ef56db8aa0bede9d5c6cdad0bfc775ee",
+    "import_sha256": "f39d5856a86994e14cce0a8863202f96ef56db8aa0bede9d5c6cdad0bfc775ee",
+    "change": "unchanged",
+    "current_sha256": "f39d5856a86994e14cce0a8863202f96ef56db8aa0bede9d5c6cdad0bfc775ee",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_context/workflow.py",
+    "path": "runtime/enterprise_prd/local_context/workflow.py",
+    "original_sha256": "2afe59e5d2925fd9c2543f5631f49b04c0544b3cee74c3d5d9322d1043fd8db0",
+    "import_sha256": "2afe59e5d2925fd9c2543f5631f49b04c0544b3cee74c3d5d9322d1043fd8db0",
+    "change": "unchanged",
+    "current_sha256": "2afe59e5d2925fd9c2543f5631f49b04c0544b3cee74c3d5d9322d1043fd8db0",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_snapshot/__init__.py",
+    "path": "runtime/enterprise_prd/local_snapshot/__init__.py",
+    "original_sha256": "3b9670fca616aea372a40d9217b5f3c81f0072ee95e98ed2dad864295c9a26d5",
+    "import_sha256": "3b9670fca616aea372a40d9217b5f3c81f0072ee95e98ed2dad864295c9a26d5",
+    "change": "unchanged",
+    "current_sha256": "3b9670fca616aea372a40d9217b5f3c81f0072ee95e98ed2dad864295c9a26d5",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_snapshot/directory.py",
+    "path": "runtime/enterprise_prd/local_snapshot/directory.py",
+    "original_sha256": "ac751bd84ad2c34531c86a1bbc5f0f2dc9dae2b4a2a5baf3697ef4997c26e0ee",
+    "import_sha256": "ac751bd84ad2c34531c86a1bbc5f0f2dc9dae2b4a2a5baf3697ef4997c26e0ee",
+    "change": "unchanged",
+    "current_sha256": "ac751bd84ad2c34531c86a1bbc5f0f2dc9dae2b4a2a5baf3697ef4997c26e0ee",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_snapshot/errors.py",
+    "path": "runtime/enterprise_prd/local_snapshot/errors.py",
+    "original_sha256": "08967879267b542e9a0e1faf62c01f0abfb0def3286967d7407a218b1f8f7129",
+    "import_sha256": "08967879267b542e9a0e1faf62c01f0abfb0def3286967d7407a218b1f8f7129",
+    "change": "unchanged",
+    "current_sha256": "08967879267b542e9a0e1faf62c01f0abfb0def3286967d7407a218b1f8f7129",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_snapshot/grant_guard.py",
+    "path": "runtime/enterprise_prd/local_snapshot/grant_guard.py",
+    "original_sha256": "c4c2f453cb6d490935bb11179b2ed98ea37db3fb7314c9284972cc6079293ba5",
+    "import_sha256": "c4c2f453cb6d490935bb11179b2ed98ea37db3fb7314c9284972cc6079293ba5",
+    "change": "unchanged",
+    "current_sha256": "c4c2f453cb6d490935bb11179b2ed98ea37db3fb7314c9284972cc6079293ba5",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_snapshot/importer.py",
+    "path": "runtime/enterprise_prd/local_snapshot/importer.py",
+    "original_sha256": "9a2eb766c3cb5a92cb909632cfa44053e75750d9b53760c4b93f2f0a4cc0d4e6",
+    "import_sha256": "9a2eb766c3cb5a92cb909632cfa44053e75750d9b53760c4b93f2f0a4cc0d4e6",
+    "change": "unchanged",
+    "current_sha256": "9a2eb766c3cb5a92cb909632cfa44053e75750d9b53760c4b93f2f0a4cc0d4e6",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_snapshot/markdown.py",
+    "path": "runtime/enterprise_prd/local_snapshot/markdown.py",
+    "original_sha256": "9cfe540f9a8e62a43001f4e90ff89cab53670b7a9f2ab0f2540410453f8942a9",
+    "import_sha256": "9cfe540f9a8e62a43001f4e90ff89cab53670b7a9f2ab0f2540410453f8942a9",
+    "change": "unchanged",
+    "current_sha256": "9cfe540f9a8e62a43001f4e90ff89cab53670b7a9f2ab0f2540410453f8942a9",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_snapshot/reader.py",
+    "path": "runtime/enterprise_prd/local_snapshot/reader.py",
+    "original_sha256": "3aa3fbc663499ea796737e2cde3a3a1ba4850f1e8afaf44b363d0a40c2cac6b2",
+    "import_sha256": "3aa3fbc663499ea796737e2cde3a3a1ba4850f1e8afaf44b363d0a40c2cac6b2",
+    "change": "unchanged",
+    "current_sha256": "3aa3fbc663499ea796737e2cde3a3a1ba4850f1e8afaf44b363d0a40c2cac6b2",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/local_snapshot/snapshot.py",
+    "path": "runtime/enterprise_prd/local_snapshot/snapshot.py",
+    "original_sha256": "5dc186becf77b7f21381ce9a9eba8d79b447eb773ada6e80a44dd39285a2ae58",
+    "import_sha256": "5dc186becf77b7f21381ce9a9eba8d79b447eb773ada6e80a44dd39285a2ae58",
+    "change": "unchanged",
+    "current_sha256": "5dc186becf77b7f21381ce9a9eba8d79b447eb773ada6e80a44dd39285a2ae58",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/manifest.py",
+    "path": "runtime/enterprise_prd/manifest.py",
+    "original_sha256": "bdf22dec1fd6ac053c4208cb0416d1da4f6b72f702f7eb53392add16f68e0070",
+    "import_sha256": "bdf22dec1fd6ac053c4208cb0416d1da4f6b72f702f7eb53392add16f68e0070",
+    "change": "unchanged",
+    "current_sha256": "bdf22dec1fd6ac053c4208cb0416d1da4f6b72f702f7eb53392add16f68e0070",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/pack.py",
+    "path": "runtime/enterprise_prd/pack.py",
+    "original_sha256": "41fea597fe9daa09943796b3e0e827aae23eb7dc4fa833c781fc570ecfce8f75",
+    "import_sha256": "41fea597fe9daa09943796b3e0e827aae23eb7dc4fa833c781fc570ecfce8f75",
+    "change": "unchanged",
+    "current_sha256": "41fea597fe9daa09943796b3e0e827aae23eb7dc4fa833c781fc570ecfce8f75",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/pilot.py",
+    "path": "runtime/enterprise_prd/pilot.py",
+    "original_sha256": "942f8ed9171f85d4ec70e04adc125d4b79c8a1889e52031d7be0514c7452b327",
+    "import_sha256": "942f8ed9171f85d4ec70e04adc125d4b79c8a1889e52031d7be0514c7452b327",
+    "change": "unchanged",
+    "current_sha256": "942f8ed9171f85d4ec70e04adc125d4b79c8a1889e52031d7be0514c7452b327",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/product_knowledge/__init__.py",
+    "path": "runtime/enterprise_prd/product_knowledge/__init__.py",
+    "original_sha256": "86f66a55c9f406caf211e514f9a2f2d7beb7932466cf728a3863ebe17e18d666",
+    "import_sha256": "86f66a55c9f406caf211e514f9a2f2d7beb7932466cf728a3863ebe17e18d666",
+    "change": "unchanged",
+    "current_sha256": "86f66a55c9f406caf211e514f9a2f2d7beb7932466cf728a3863ebe17e18d666",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/product_knowledge/grant.py",
+    "path": "runtime/enterprise_prd/product_knowledge/grant.py",
+    "original_sha256": "62f499ac45b9bf04df5ca2941dc075f3eabfb0e49fbb5067a652bae2a942b521",
+    "import_sha256": "62f499ac45b9bf04df5ca2941dc075f3eabfb0e49fbb5067a652bae2a942b521",
+    "change": "unchanged",
+    "current_sha256": "62f499ac45b9bf04df5ca2941dc075f3eabfb0e49fbb5067a652bae2a942b521",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/product_knowledge/models.py",
+    "path": "runtime/enterprise_prd/product_knowledge/models.py",
+    "original_sha256": "b3a44162f3d12f41a280c5f47d9e05e05c57b45b96fe71b3e0e0aadcd1e9e46a",
+    "import_sha256": "b3a44162f3d12f41a280c5f47d9e05e05c57b45b96fe71b3e0e0aadcd1e9e46a",
+    "change": "unchanged",
+    "current_sha256": "b3a44162f3d12f41a280c5f47d9e05e05c57b45b96fe71b3e0e0aadcd1e9e46a",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/product_knowledge/outline.py",
+    "path": "runtime/enterprise_prd/product_knowledge/outline.py",
+    "original_sha256": "4034cdf5ab8c8d4c5467b6c7c5464de3a6ec091b83b40f7fdc1782d66b5b6db9",
+    "import_sha256": "4034cdf5ab8c8d4c5467b6c7c5464de3a6ec091b83b40f7fdc1782d66b5b6db9",
+    "change": "unchanged",
+    "current_sha256": "4034cdf5ab8c8d4c5467b6c7c5464de3a6ec091b83b40f7fdc1782d66b5b6db9",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/product_knowledge/selection.py",
+    "path": "runtime/enterprise_prd/product_knowledge/selection.py",
+    "original_sha256": "b32f5c2501b6adc805b5edbfa4fac2388aac4fcf48050ac8578b390aebc30ff7",
+    "import_sha256": "b32f5c2501b6adc805b5edbfa4fac2388aac4fcf48050ac8578b390aebc30ff7",
+    "change": "unchanged",
+    "current_sha256": "b32f5c2501b6adc805b5edbfa4fac2388aac4fcf48050ac8578b390aebc30ff7",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/product_knowledge/stores.py",
+    "path": "runtime/enterprise_prd/product_knowledge/stores.py",
+    "original_sha256": "3da395fbfa3d2052e1a27517dcb93f0611b194b93b0134e0701f9ab817c29c25",
+    "import_sha256": "3da395fbfa3d2052e1a27517dcb93f0611b194b93b0134e0701f9ab817c29c25",
+    "change": "unchanged",
+    "current_sha256": "3da395fbfa3d2052e1a27517dcb93f0611b194b93b0134e0701f9ab817c29c25",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/prototype/__init__.py",
+    "path": "runtime/enterprise_prd/prototype/__init__.py",
+    "original_sha256": "309235c9640a497edbe7d9d41bd6609e2b582464dfd5821af6ccae5417021be9",
+    "import_sha256": "309235c9640a497edbe7d9d41bd6609e2b582464dfd5821af6ccae5417021be9",
+    "change": "unchanged",
+    "current_sha256": "309235c9640a497edbe7d9d41bd6609e2b582464dfd5821af6ccae5417021be9",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/prototype/cli.py",
+    "path": "runtime/enterprise_prd/prototype/cli.py",
+    "original_sha256": "bb2a68bef138fe65557c2447a362ec75184d89c8a694ce1feee6176e344cb1d7",
+    "import_sha256": "bb2a68bef138fe65557c2447a362ec75184d89c8a694ce1feee6176e344cb1d7",
+    "change": "unchanged",
+    "current_sha256": "bb2a68bef138fe65557c2447a362ec75184d89c8a694ce1feee6176e344cb1d7",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/prototype/contracts.py",
+    "path": "runtime/enterprise_prd/prototype/contracts.py",
+    "original_sha256": "27c7a5d276d9ff9f46b3c4130942c9f7e25dcd65ab0a794705f7739985bc8db7",
+    "import_sha256": "27c7a5d276d9ff9f46b3c4130942c9f7e25dcd65ab0a794705f7739985bc8db7",
+    "change": "unchanged",
+    "current_sha256": "27c7a5d276d9ff9f46b3c4130942c9f7e25dcd65ab0a794705f7739985bc8db7",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/prototype/errors.py",
+    "path": "runtime/enterprise_prd/prototype/errors.py",
+    "original_sha256": "92b94f99b2fe6077b08fdce89effe8b58f647fe8ba4360b386c3f18802e0e635",
+    "import_sha256": "92b94f99b2fe6077b08fdce89effe8b58f647fe8ba4360b386c3f18802e0e635",
+    "change": "unchanged",
+    "current_sha256": "92b94f99b2fe6077b08fdce89effe8b58f647fe8ba4360b386c3f18802e0e635",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/prototype/handoff.py",
+    "path": "runtime/enterprise_prd/prototype/handoff.py",
+    "original_sha256": "40da0ba3b91f3b20145626739c66115e00d9e224b136b65c6c23908ba2c17394",
+    "import_sha256": "40da0ba3b91f3b20145626739c66115e00d9e224b136b65c6c23908ba2c17394",
+    "change": "unchanged",
+    "current_sha256": "40da0ba3b91f3b20145626739c66115e00d9e224b136b65c6c23908ba2c17394",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/prototype/local_sources.py",
+    "path": "runtime/enterprise_prd/prototype/local_sources.py",
+    "original_sha256": "107a525ee69c5988ee39ee848a199bd8ef69a7a2ef579bdd33e2c1c10cc4ac2c",
+    "import_sha256": "107a525ee69c5988ee39ee848a199bd8ef69a7a2ef579bdd33e2c1c10cc4ac2c",
+    "change": "unchanged",
+    "current_sha256": "107a525ee69c5988ee39ee848a199bd8ef69a7a2ef579bdd33e2c1c10cc4ac2c",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/prototype/readiness.py",
+    "path": "runtime/enterprise_prd/prototype/readiness.py",
+    "original_sha256": "ae8d8cfcb4e1960c54e25314a19363c4697da6f98dea8f1ad31523ec19204a57",
+    "import_sha256": "ae8d8cfcb4e1960c54e25314a19363c4697da6f98dea8f1ad31523ec19204a57",
+    "change": "unchanged",
+    "current_sha256": "ae8d8cfcb4e1960c54e25314a19363c4697da6f98dea8f1ad31523ec19204a57",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/prototype/review.py",
+    "path": "runtime/enterprise_prd/prototype/review.py",
+    "original_sha256": "1bf0831ada92dd5fcf131eabaafd81cac6b3396cf1d56de339c8ae5ca616e3a8",
+    "import_sha256": "1bf0831ada92dd5fcf131eabaafd81cac6b3396cf1d56de339c8ae5ca616e3a8",
+    "change": "unchanged",
+    "current_sha256": "1bf0831ada92dd5fcf131eabaafd81cac6b3396cf1d56de339c8ae5ca616e3a8",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/prototype/start.py",
+    "path": "runtime/enterprise_prd/prototype/start.py",
+    "original_sha256": "9ec7b1c0a389c0bb8444d92e5d59aa708cd96eeb60ca8cb3481af0a6339f6d4f",
+    "import_sha256": "9ec7b1c0a389c0bb8444d92e5d59aa708cd96eeb60ca8cb3481af0a6339f6d4f",
+    "change": "unchanged",
+    "current_sha256": "9ec7b1c0a389c0bb8444d92e5d59aa708cd96eeb60ca8cb3481af0a6339f6d4f",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/prototype/store.py",
+    "path": "runtime/enterprise_prd/prototype/store.py",
+    "original_sha256": "09c7a892aebb647804253aa2e8cf0b6e3a48611e7301102fb30f901f7b34d4da",
+    "import_sha256": "09c7a892aebb647804253aa2e8cf0b6e3a48611e7301102fb30f901f7b34d4da",
+    "change": "unchanged",
+    "current_sha256": "09c7a892aebb647804253aa2e8cf0b6e3a48611e7301102fb30f901f7b34d4da",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/prototype/validation.py",
+    "path": "runtime/enterprise_prd/prototype/validation.py",
+    "original_sha256": "7b46ab2c954c724d8d5eaca732a826da875c99bcf9f88f4b1018e3f1c954f936",
+    "import_sha256": "7b46ab2c954c724d8d5eaca732a826da875c99bcf9f88f4b1018e3f1c954f936",
+    "change": "unchanged",
+    "current_sha256": "7b46ab2c954c724d8d5eaca732a826da875c99bcf9f88f4b1018e3f1c954f936",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/prototype/validation_context.py",
+    "path": "runtime/enterprise_prd/prototype/validation_context.py",
+    "original_sha256": "78a5e12d5d14f9552bbc926666e56320e0d6ec327db31d869337d1057d2f1db7",
+    "import_sha256": "78a5e12d5d14f9552bbc926666e56320e0d6ec327db31d869337d1057d2f1db7",
+    "change": "unchanged",
+    "current_sha256": "78a5e12d5d14f9552bbc926666e56320e0d6ec327db31d869337d1057d2f1db7",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/prototype/verify.py",
+    "path": "runtime/enterprise_prd/prototype/verify.py",
+    "original_sha256": "70608d83f58ba59c3659211aa098af569d916ad4775ec674b5ca195ae266ceee",
+    "import_sha256": "70608d83f58ba59c3659211aa098af569d916ad4775ec674b5ca195ae266ceee",
+    "change": "unchanged",
+    "current_sha256": "70608d83f58ba59c3659211aa098af569d916ad4775ec674b5ca195ae266ceee",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/prototype/version.py",
+    "path": "runtime/enterprise_prd/prototype/version.py",
+    "original_sha256": "86ce9dc477c89955c3e56b6cade04d9e59a8a71363d7c4f454efebe57f09ff38",
+    "import_sha256": "b75af8180b592942eaed68356567ab8dabe4030aa5ee27c165f14338eec7abbe",
+    "change": "identity",
+    "current_sha256": "b75af8180b592942eaed68356567ab8dabe4030aa5ee27c165f14338eec7abbe",
+    "adapted": true
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/registry.py",
+    "path": "runtime/enterprise_prd/registry.py",
+    "original_sha256": "995e43c714c7f9f35c2ed8f12804d1812c912aa1921cbcdbfa9d046b73b61db7",
+    "import_sha256": "995e43c714c7f9f35c2ed8f12804d1812c912aa1921cbcdbfa9d046b73b61db7",
+    "change": "unchanged",
+    "current_sha256": "995e43c714c7f9f35c2ed8f12804d1812c912aa1921cbcdbfa9d046b73b61db7",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/source_catalog.py",
+    "path": "runtime/enterprise_prd/source_catalog.py",
+    "original_sha256": "2444bf86980a51ed47f3363d0ce14c121638fbb90bb216f5b04cb03bbbc28285",
+    "import_sha256": "2444bf86980a51ed47f3363d0ce14c121638fbb90bb216f5b04cb03bbbc28285",
+    "change": "unchanged",
+    "current_sha256": "2444bf86980a51ed47f3363d0ce14c121638fbb90bb216f5b04cb03bbbc28285",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/task_knowledge/__init__.py",
+    "path": "runtime/enterprise_prd/task_knowledge/__init__.py",
+    "original_sha256": "8011105628a7320e66b59d209dcdde951b1dc476f19e9fe6a957cb4fde6f9c74",
+    "import_sha256": "8011105628a7320e66b59d209dcdde951b1dc476f19e9fe6a957cb4fde6f9c74",
+    "change": "unchanged",
+    "current_sha256": "8011105628a7320e66b59d209dcdde951b1dc476f19e9fe6a957cb4fde6f9c74",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/task_knowledge/bridge.py",
+    "path": "runtime/enterprise_prd/task_knowledge/bridge.py",
+    "original_sha256": "cb3f70aa8a3eafe0a5d5c77b8bbeeed4866a464ceb7c8d1b9007b1c996520e8e",
+    "import_sha256": "cb3f70aa8a3eafe0a5d5c77b8bbeeed4866a464ceb7c8d1b9007b1c996520e8e",
+    "change": "unchanged",
+    "current_sha256": "cb3f70aa8a3eafe0a5d5c77b8bbeeed4866a464ceb7c8d1b9007b1c996520e8e",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/task_knowledge/builder.py",
+    "path": "runtime/enterprise_prd/task_knowledge/builder.py",
+    "original_sha256": "4d824424564975162fa7564537edca6478a4878d759bde05dac6d6f9a194e397",
+    "import_sha256": "4d824424564975162fa7564537edca6478a4878d759bde05dac6d6f9a194e397",
+    "change": "unchanged",
+    "current_sha256": "4d824424564975162fa7564537edca6478a4878d759bde05dac6d6f9a194e397",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/task_knowledge/cli.py",
+    "path": "runtime/enterprise_prd/task_knowledge/cli.py",
+    "original_sha256": "241cc0a1a111e145f3da8badf7df0f7a17506405e94dc8604145e13bead14c04",
+    "import_sha256": "241cc0a1a111e145f3da8badf7df0f7a17506405e94dc8604145e13bead14c04",
+    "change": "unchanged",
+    "current_sha256": "241cc0a1a111e145f3da8badf7df0f7a17506405e94dc8604145e13bead14c04",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/task_knowledge/contracts.py",
+    "path": "runtime/enterprise_prd/task_knowledge/contracts.py",
+    "original_sha256": "c25e0f5dff67172a36f41728bcf25907751f35871375958578e1c29086193598",
+    "import_sha256": "c25e0f5dff67172a36f41728bcf25907751f35871375958578e1c29086193598",
+    "change": "unchanged",
+    "current_sha256": "c25e0f5dff67172a36f41728bcf25907751f35871375958578e1c29086193598",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/task_knowledge/directory.py",
+    "path": "runtime/enterprise_prd/task_knowledge/directory.py",
+    "original_sha256": "a234c516e10ec6127565d4434c92f8e26e09c77fc90dd7501067596d38f07b67",
+    "import_sha256": "a234c516e10ec6127565d4434c92f8e26e09c77fc90dd7501067596d38f07b67",
+    "change": "unchanged",
+    "current_sha256": "a234c516e10ec6127565d4434c92f8e26e09c77fc90dd7501067596d38f07b67",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/task_knowledge/errors.py",
+    "path": "runtime/enterprise_prd/task_knowledge/errors.py",
+    "original_sha256": "1d4695f0c2c1980ffbad0cba88f6ca96b92069a0dcdcea448710aa2c43a36e2e",
+    "import_sha256": "1d4695f0c2c1980ffbad0cba88f6ca96b92069a0dcdcea448710aa2c43a36e2e",
+    "change": "unchanged",
+    "current_sha256": "1d4695f0c2c1980ffbad0cba88f6ca96b92069a0dcdcea448710aa2c43a36e2e",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/task_knowledge/fixture_flow.py",
+    "path": "runtime/enterprise_prd/task_knowledge/fixture_flow.py",
+    "original_sha256": "0be8a353ef42c035c83c15a068b7a73d67a4fe41456c84585d84458ecfb1d873",
+    "import_sha256": "0be8a353ef42c035c83c15a068b7a73d67a4fe41456c84585d84458ecfb1d873",
+    "change": "unchanged",
+    "current_sha256": "0be8a353ef42c035c83c15a068b7a73d67a4fe41456c84585d84458ecfb1d873",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/task_knowledge/focused_report.py",
+    "path": "runtime/enterprise_prd/task_knowledge/focused_report.py",
+    "original_sha256": "679ca2982130ed827a6c41fd85d5bc6af3e7adb1d39ac053a5394e255549f78f",
+    "import_sha256": "679ca2982130ed827a6c41fd85d5bc6af3e7adb1d39ac053a5394e255549f78f",
+    "change": "unchanged",
+    "current_sha256": "679ca2982130ed827a6c41fd85d5bc6af3e7adb1d39ac053a5394e255549f78f",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/task_knowledge/store.py",
+    "path": "runtime/enterprise_prd/task_knowledge/store.py",
+    "original_sha256": "6d21f1ebf98ea92479f471539a59eee2e33e719b7b3f5163c1ccb7910f9ac063",
+    "import_sha256": "6d21f1ebf98ea92479f471539a59eee2e33e719b7b3f5163c1ccb7910f9ac063",
+    "change": "unchanged",
+    "current_sha256": "6d21f1ebf98ea92479f471539a59eee2e33e719b7b3f5163c1ccb7910f9ac063",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/task_knowledge/version.py",
+    "path": "runtime/enterprise_prd/task_knowledge/version.py",
+    "original_sha256": "acc7ba287543611f479c94b877e28b2f0f8db8ef81e973e2943ef81cd7f335fb",
+    "import_sha256": "acc7ba287543611f479c94b877e28b2f0f8db8ef81e973e2943ef81cd7f335fb",
+    "change": "unchanged",
+    "current_sha256": "acc7ba287543611f479c94b877e28b2f0f8db8ef81e973e2943ef81cd7f335fb",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/task_knowledge/writer_input.py",
+    "path": "runtime/enterprise_prd/task_knowledge/writer_input.py",
+    "original_sha256": "6b31a2f838a2ebe7b34a6c4bb01f55ce1c08b00a116718311b24c71cec3777c8",
+    "import_sha256": "6b31a2f838a2ebe7b34a6c4bb01f55ce1c08b00a116718311b24c71cec3777c8",
+    "change": "unchanged",
+    "current_sha256": "6b31a2f838a2ebe7b34a6c4bb01f55ce1c08b00a116718311b24c71cec3777c8",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/task_start.py",
+    "path": "runtime/enterprise_prd/task_start.py",
+    "original_sha256": "9649c295204114e13b57177f9f6ce3e87e9bc296004b9274cad53dabf484510b",
+    "import_sha256": "9649c295204114e13b57177f9f6ce3e87e9bc296004b9274cad53dabf484510b",
+    "change": "unchanged",
+    "current_sha256": "9649c295204114e13b57177f9f6ce3e87e9bc296004b9274cad53dabf484510b",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/updater.py",
+    "path": "runtime/enterprise_prd/updater.py",
+    "original_sha256": "d4585024fc6e844dacd29aa7d86029aff1cc99699d43bd3690d5e0a92dac68b5",
+    "import_sha256": "d4585024fc6e844dacd29aa7d86029aff1cc99699d43bd3690d5e0a92dac68b5",
+    "change": "unchanged",
+    "current_sha256": "d4585024fc6e844dacd29aa7d86029aff1cc99699d43bd3690d5e0a92dac68b5",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/workflow/__init__.py",
+    "path": "runtime/enterprise_prd/workflow/__init__.py",
+    "original_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "import_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "change": "unchanged",
+    "current_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/workflow/audit.py",
+    "path": "runtime/enterprise_prd/workflow/audit.py",
+    "original_sha256": "16dab26e6b5af8709166449ab1ec7d141cdffc87d6582265b644b7a19b8bbe9f",
+    "import_sha256": "16dab26e6b5af8709166449ab1ec7d141cdffc87d6582265b644b7a19b8bbe9f",
+    "change": "unchanged",
+    "current_sha256": "16dab26e6b5af8709166449ab1ec7d141cdffc87d6582265b644b7a19b8bbe9f",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/workflow/context.py",
+    "path": "runtime/enterprise_prd/workflow/context.py",
+    "original_sha256": "fe79780962f880c74a709d4e5e85ec7019c9a51b4f67c1efa357ac35cf84c172",
+    "import_sha256": "fe79780962f880c74a709d4e5e85ec7019c9a51b4f67c1efa357ac35cf84c172",
+    "change": "unchanged",
+    "current_sha256": "fe79780962f880c74a709d4e5e85ec7019c9a51b4f67c1efa357ac35cf84c172",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/workflow/handoff.py",
+    "path": "runtime/enterprise_prd/workflow/handoff.py",
+    "original_sha256": "a46297a8a409d9461d369f8acd6c5b675fbae3f1556575413d488f00528c4cf0",
+    "import_sha256": "a46297a8a409d9461d369f8acd6c5b675fbae3f1556575413d488f00528c4cf0",
+    "change": "unchanged",
+    "current_sha256": "a46297a8a409d9461d369f8acd6c5b675fbae3f1556575413d488f00528c4cf0",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/workflow/metrics.py",
+    "path": "runtime/enterprise_prd/workflow/metrics.py",
+    "original_sha256": "0f17e68e5b5560aa3116fc6a53e6b1b6cb773481abe4bdeb8e569e09ee4283d9",
+    "import_sha256": "0f17e68e5b5560aa3116fc6a53e6b1b6cb773481abe4bdeb8e569e09ee4283d9",
+    "change": "unchanged",
+    "current_sha256": "0f17e68e5b5560aa3116fc6a53e6b1b6cb773481abe4bdeb8e569e09ee4283d9",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/workflow/review.py",
+    "path": "runtime/enterprise_prd/workflow/review.py",
+    "original_sha256": "4a8ec895ec34a459f88d6e5c2fffe0766a133052f1db8cf1fd9cb7109f8395b7",
+    "import_sha256": "4a8ec895ec34a459f88d6e5c2fffe0766a133052f1db8cf1fd9cb7109f8395b7",
+    "change": "unchanged",
+    "current_sha256": "4a8ec895ec34a459f88d6e5c2fffe0766a133052f1db8cf1fd9cb7109f8395b7",
+    "adapted": false
+  },
+  {
+    "source": "enterprise-prototype-skills/runtime/enterprise_prd/workflow/state.py",
+    "path": "runtime/enterprise_prd/workflow/state.py",
+    "original_sha256": "43e90ccd2015bec3b760cb16925db01c42cecef31ef92059e7f886298ed8515a",
+    "import_sha256": "43e90ccd2015bec3b760cb16925db01c42cecef31ef92059e7f886298ed8515a",
+    "change": "unchanged",
+    "current_sha256": "43e90ccd2015bec3b760cb16925db01c42cecef31ef92059e7f886298ed8515a",
+    "adapted": false
+  },
+  {
+    "source": "company-prototype/cases/index.yaml",
+    "path": "packs/company-prototype/cases/index.yaml",
+    "original_sha256": "2c6159296772eefa74c48356ae40315f57dde3e1f05d9ff184cd1d1fa08c75d7",
+    "import_sha256": "2c6159296772eefa74c48356ae40315f57dde3e1f05d9ff184cd1d1fa08c75d7",
+    "change": "unchanged",
+    "current_sha256": "2c6159296772eefa74c48356ae40315f57dde3e1f05d9ff184cd1d1fa08c75d7",
+    "adapted": false
+  },
+  {
+    "source": "company-prototype/components/component-catalog.yaml",
+    "path": "packs/company-prototype/components/component-catalog.yaml",
+    "original_sha256": "be89d0b217673b6e7dedb93d2276a2ce54db0edcf2668e47783850d7e9c4ec83",
+    "import_sha256": "be89d0b217673b6e7dedb93d2276a2ce54db0edcf2668e47783850d7e9c4ec83",
+    "change": "unchanged",
+    "current_sha256": "be89d0b217673b6e7dedb93d2276a2ce54db0edcf2668e47783850d7e9c4ec83",
+    "adapted": false
+  },
+  {
+    "source": "company-prototype/contracts/prototype-entry.yaml",
+    "path": "packs/company-prototype/contracts/prototype-entry.yaml",
+    "original_sha256": "2b1a26f8983e00c057e94b04f3fa0dbd78562c42283844cc5e6dee6115e1561e",
+    "import_sha256": "2b1a26f8983e00c057e94b04f3fa0dbd78562c42283844cc5e6dee6115e1561e",
+    "change": "unchanged",
+    "current_sha256": "2b1a26f8983e00c057e94b04f3fa0dbd78562c42283844cc5e6dee6115e1561e",
+    "adapted": false
+  },
+  {
+    "source": "company-prototype/contracts/prototype-handoff.yaml",
+    "path": "packs/company-prototype/contracts/prototype-handoff.yaml",
+    "original_sha256": "51ad89cce9a87d4ecba308d17225f8cabae38b7367a96f795b550776df401eb7",
+    "import_sha256": "51ad89cce9a87d4ecba308d17225f8cabae38b7367a96f795b550776df401eb7",
+    "change": "unchanged",
+    "current_sha256": "51ad89cce9a87d4ecba308d17225f8cabae38b7367a96f795b550776df401eb7",
+    "adapted": false
+  },
+  {
+    "source": "company-prototype/contracts/prototype-review.yaml",
+    "path": "packs/company-prototype/contracts/prototype-review.yaml",
+    "original_sha256": "c28e47a522758ac49a654cb5ddf2b1e83d9d0fa28c81eefcf6b63a6409e3dd99",
+    "import_sha256": "c28e47a522758ac49a654cb5ddf2b1e83d9d0fa28c81eefcf6b63a6409e3dd99",
+    "change": "unchanged",
+    "current_sha256": "c28e47a522758ac49a654cb5ddf2b1e83d9d0fa28c81eefcf6b63a6409e3dd99",
+    "adapted": false
+  },
+  {
+    "source": "company-prototype/contracts/prototype-source-selection.yaml",
+    "path": "packs/company-prototype/contracts/prototype-source-selection.yaml",
+    "original_sha256": "05649cdeffd85a9b5eece2a98b832c60cc637a058ab1de18d607b69e7dd24cfe",
+    "import_sha256": "05649cdeffd85a9b5eece2a98b832c60cc637a058ab1de18d607b69e7dd24cfe",
+    "change": "unchanged",
+    "current_sha256": "05649cdeffd85a9b5eece2a98b832c60cc637a058ab1de18d607b69e7dd24cfe",
+    "adapted": false
+  },
+  {
+    "source": "company-prototype/pack.yaml",
+    "path": "packs/company-prototype/pack.yaml",
+    "original_sha256": "7b200e02b0e6325ec328bffe573e0413dbbc49f059e280e853338f26eb5759b4",
+    "import_sha256": "33a4df41549d600e0d984d5638026b51bbcac9339a770d1d42759a6ac52abfb4",
+    "change": "identity",
+    "current_sha256": "33a4df41549d600e0d984d5638026b51bbcac9339a770d1d42759a6ac52abfb4",
+    "adapted": true
+  },
+  {
+    "source": "company-prototype/standards/delivery-sanitization.md",
+    "path": "packs/company-prototype/standards/delivery-sanitization.md",
+    "original_sha256": "d82986e2bc95c8a2817edcbfc3174423492b3ccc2c874a13f74caab7b4730a57",
+    "import_sha256": "d82986e2bc95c8a2817edcbfc3174423492b3ccc2c874a13f74caab7b4730a57",
+    "change": "unchanged",
+    "current_sha256": "d82986e2bc95c8a2817edcbfc3174423492b3ccc2c874a13f74caab7b4730a57",
+    "adapted": false
+  },
+  {
+    "source": "company-prototype/standards/design-system.md",
+    "path": "packs/company-prototype/standards/design-system.md",
+    "original_sha256": "4b589ddf101415e035a872cd4838723982d5866e89b39502c77f4212bca0f485",
+    "import_sha256": "4b589ddf101415e035a872cd4838723982d5866e89b39502c77f4212bca0f485",
+    "change": "unchanged",
+    "current_sha256": "4b589ddf101415e035a872cd4838723982d5866e89b39502c77f4212bca0f485",
+    "adapted": false
+  },
+  {
+    "source": "company-prototype/standards/prototype-quality-baseline.md",
+    "path": "packs/company-prototype/standards/prototype-quality-baseline.md",
+    "original_sha256": "86dd080e95c2ee63099af7556a691856484780da97fa3391f7211bcee9d7df85",
+    "import_sha256": "86dd080e95c2ee63099af7556a691856484780da97fa3391f7211bcee9d7df85",
+    "change": "unchanged",
+    "current_sha256": "86dd080e95c2ee63099af7556a691856484780da97fa3391f7211bcee9d7df85",
+    "adapted": false
+  },
+  {
+    "source": "company-prototype/surfaces/surface-guidance.yaml",
+    "path": "packs/company-prototype/surfaces/surface-guidance.yaml",
+    "original_sha256": "ac14b09dfeeef8c5b20bb984168506d8587f872c5e0b2e106e07788ad1d007e0",
+    "import_sha256": "3da5b57bf90468f570ce11a6f4a4f838b6028d610230fead6fe5314d57f0e503",
+    "change": "identity",
+    "current_sha256": "3da5b57bf90468f570ce11a6f4a4f838b6028d610230fead6fe5314d57f0e503",
+    "adapted": true
+  }
+]

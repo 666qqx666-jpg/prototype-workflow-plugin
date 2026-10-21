@@ -1,0 +1,15 @@
+{
+  "name": "prototype-developer-reader-shell",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-manifest.mjs",
+    "audit": "node scripts/audit-anchors.mjs",
+    "build": "node scripts/build-snapshot.mjs"
+  },
+  "dependencies": {
+    "ajv": "8.17.1",
+    "esbuild": "0.28.1",
+    "playwright": "1.62.0"
+  }
+}

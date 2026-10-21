@@ -1,0 +1,34 @@
+{
+  "schemaVersion": "2.0.0",
+  "reviewId": "REPLACE-WITH-REVIEW-ID",
+  "reviewerRole": "independent",
+  "reviewedAt": "2026-08-17T00:00:00Z",
+  "subject": {
+    "manifestHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "prototypeHash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "evidenceBundleHash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+    "currentSnapshotHash": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+    "previousManifestHash": null,
+    "previousSnapshotHash": null
+  },
+  "triggers": [
+    "first-real-use"
+  ],
+  "verdict": "pass",
+  "findings": [],
+  "scopeReview": {
+    "result": "pass",
+    "evidenceRefs": [
+      "evidence:scope"
+    ],
+    "note": "已分别复核范围、样本和实际覆盖"
+  },
+  "pendingReview": {
+    "result": "pass",
+    "evidenceRefs": [
+      "evidence:pending"
+    ],
+    "note": "已复核 reconciliation 与当前权威来源"
+  },
+  "negativeChecks": []
+}

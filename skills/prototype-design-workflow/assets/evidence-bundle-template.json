@@ -1,0 +1,10 @@
+{
+  "schemaVersion": "1.0.0",
+  "sources": [
+    {"sourceId": "prd-current", "sourceType": "prd", "path": "./evidence/prd-current.md", "origin": {"kind": "workspace-file", "locator": "docs/prd-current.md"}},
+    {"sourceId": "runtime-current", "sourceType": "runtime", "path": "./evidence/runtime-walkthrough.md", "origin": {"kind": "captured-runtime", "locator": "route:/example"}},
+    {"sourceId": "code-current", "sourceType": "code", "path": "./evidence/current-page.html", "origin": {"kind": "workspace-file", "locator": "src/current-page.html"}},
+    {"sourceId": "screenshot-current", "sourceType": "screenshot", "path": "./evidence/current-page.png", "origin": {"kind": "captured-runtime", "locator": "route:/example@same-version"}},
+    {"sourceId": "prototype-before-change", "sourceType": "prototype-baseline", "path": "./evidence/prototype-before-change.html", "origin": {"kind": "workspace-file", "locator": "prototype-example.html@before-change"}}
+  ]
+}

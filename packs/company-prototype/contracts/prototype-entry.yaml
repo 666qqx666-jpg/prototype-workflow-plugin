@@ -1,0 +1,12 @@
+schema_version: 1
+protocol: enterprise-prototype-candidate/v1
+entry_schema_version: 2
+readiness_assessment_schema_version: 1
+allowed_modes: [existing-system-increment]
+allowed_delivery: [light, standard]
+allowed_coverage: [light, pilot-slice, full]
+required_entry_states:
+  review_evidence: pass
+  prototype_readiness: pass
+recorded_spec_readiness: [pass, block, not_assessed]
+stage_authorization_required: true

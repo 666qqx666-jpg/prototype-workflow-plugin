@@ -1,0 +1,12 @@
+schema_version: 1
+protocol: enterprise-prototype-source-selection/v1
+required_source_roles:
+  - current-product-requirement
+  - confirmed-product-decision
+  - observed-runtime
+  - current-code
+  - same-version-screenshot
+  - current-prototype-baseline
+allowed_adapters: [local-file]
+selection_mode: explicit-local-source-set
+lineage_baseline_is_business_source: false

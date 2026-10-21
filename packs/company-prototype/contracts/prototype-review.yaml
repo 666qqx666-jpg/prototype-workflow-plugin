@@ -1,0 +1,20 @@
+schema_version: 1
+protocol: enterprise-prototype-review/v1
+independent_review_schema: 2.0.0
+execution_order: after-builder-handoff
+required_negative_checks:
+  - unrelated-field-preservation
+  - empty-and-missing-values
+  - historical-out-of-candidate-data
+  - unauthorized-actions
+  - concurrent-conflict
+  - post-save-membership
+negative_check_rules:
+  applicable: result-pass-and-evidence-required
+  not_applicable: result-not-applicable-note-required
+scope_and_pending_review: required
+review_must_reopen_authoritative_sources: true
+allowed_verdicts: [pass, block]
+allowed_severities: [blocker, major, minor, note]
+fresh_context_required: true
+aesthetic_preference_can_block: false

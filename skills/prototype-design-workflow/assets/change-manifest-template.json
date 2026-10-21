@@ -1,0 +1,376 @@
+{
+  "schemaVersion": "4.0.0",
+  "requirement": {
+    "id": "EXAMPLE-REQ",
+    "title": "示例需求",
+    "coverage": "pilot-slice",
+    "primarySourceId": "prd-current",
+    "scope": {
+      "included": [
+        "示例页增量"
+      ],
+      "navigationOnly": [
+        "共享权限规则适用的列表页"
+      ],
+      "outOfSlice": [
+        "本切片之外的页面"
+      ]
+    }
+  },
+  "prototype": {
+    "sourceLabel": "prototype-example.html",
+    "sourcePath": "prototype-example.html",
+    "sourceHash": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+    "baselineSourceId": "prototype-before-change",
+    "baselineHash": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+    "sourceRole": "current-workspace-prototype"
+  },
+  "delivery": {
+    "mode": "standard",
+    "readerRole": "derived-readonly",
+    "riskTriggers": [
+      "rule-change"
+    ],
+    "lineage": {
+      "mode": "initial",
+      "previousManifestSha256": null,
+      "previousSnapshotSha256": null,
+      "baselineReceiptSha256": null,
+      "preservedCardIds": [],
+      "modifiedCardIds": [],
+      "addedCardIds": [
+        "EXAMPLE-CARD-01"
+      ],
+      "removedCardIds": [],
+      "removalDecisions": []
+    },
+    "readerComposition": {
+      "coreItems": [
+        "change-overview",
+        "collapse-expand-all",
+        "return-previous-prototype",
+        "full-development-snapshot",
+        "change-kind-color",
+        "current-location",
+        "bidirectional-visible-connector",
+        "fact-source-details"
+      ],
+      "customItems": [],
+      "removedItems": []
+    },
+    "pendingReconciliation": {
+      "carried": [],
+      "resolved": [],
+      "superseded": [],
+      "new": []
+    }
+  },
+  "baselineEvidence": {
+    "mode": "existing-system-increment",
+    "runtimePage": {
+      "availability": "available",
+      "sourceIds": [
+        "runtime-current"
+      ],
+      "note": "已实际走查当前宿主页与入口。"
+    },
+    "code": {
+      "availability": "available",
+      "sourceIds": [
+        "code-current"
+      ],
+      "note": "已定向检索宿主页面和目标组件。"
+    },
+    "screenshots": {
+      "availability": "available",
+      "sourceIds": [
+        "screenshot-current"
+      ],
+      "note": "截图与当前页面、代码为同一版本。"
+    },
+    "conflicts": []
+  },
+  "evidenceSources": [
+    {
+      "sourceId": "prd-current",
+      "sourceType": "prd",
+      "authority": "current-product-requirement",
+      "label": "当前 PRD",
+      "contentKind": "text",
+      "sourceHash": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+    },
+    {
+      "sourceId": "runtime-current",
+      "sourceType": "runtime",
+      "authority": "observed-runtime",
+      "label": "当前真实页面走查记录",
+      "contentKind": "text",
+      "sourceHash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+    },
+    {
+      "sourceId": "code-current",
+      "sourceType": "code",
+      "authority": "current-code",
+      "label": "当前宿主页面代码",
+      "contentKind": "source-code",
+      "sourceHash": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+    },
+    {
+      "sourceId": "screenshot-current",
+      "sourceType": "screenshot",
+      "authority": "same-version-screenshot",
+      "label": "同版本基线截图",
+      "contentKind": "image",
+      "sourceHash": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+    },
+    {
+      "sourceId": "prototype-before-change",
+      "sourceType": "prototype-baseline",
+      "authority": "current-prototype-baseline",
+      "label": "修改前原型快照",
+      "contentKind": "html",
+      "sourceHash": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+    }
+  ],
+  "pages": [
+    {
+      "pageId": "example-page",
+      "title": "示例页",
+      "order": 1
+    },
+    {
+      "pageId": "example-list",
+      "title": "示例列表页",
+      "order": 2
+    }
+  ],
+  "surfaces": [
+    {
+      "surfaceId": "view:example",
+      "kind": "view",
+      "rootSelector": "#view-example",
+      "activeSelector": "#view-example.active",
+      "parentSurfaceIds": [],
+      "exitActions": [],
+      "exitGuardSurfaceIds": [],
+      "snapshotSelectors": [
+        "#view-example"
+      ]
+    }
+  ],
+  "globalRules": [
+    {
+      "ruleId": "GLOBAL-01",
+      "title": "全局权限规则",
+      "summary": "只有具备编辑权限的用户可以提交。",
+      "scope": "all-pages",
+      "appliesToPageIds": [
+        "example-page",
+        "example-list"
+      ],
+      "nonLocatableReason": "cross-page-policy",
+      "rules": [
+        "只读用户仍可查看已保存结果，但不能提交。"
+      ],
+      "evidenceBindings": [
+        {
+          "claimPath": "/globalRules/0/title",
+          "sourceRefs": [
+            {
+              "sourceId": "prd-current",
+              "locator": "heading:权限",
+              "excerpt": "权限规则"
+            }
+          ]
+        },
+        {
+          "claimPath": "/globalRules/0/summary",
+          "sourceRefs": [
+            {
+              "sourceId": "prd-current",
+              "locator": "heading:权限",
+              "excerpt": "只有具备编辑权限的用户可以提交"
+            }
+          ]
+        },
+        {
+          "claimPath": "/globalRules/0/scope",
+          "sourceRefs": [
+            {
+              "sourceId": "prd-current",
+              "locator": "heading:权限",
+              "excerpt": "权限规则统一适用于所有页面"
+            }
+          ]
+        },
+        {
+          "claimPath": "/globalRules/0/appliesToPageIds",
+          "sourceRefs": [
+            {
+              "sourceId": "prd-current",
+              "locator": "heading:权限",
+              "excerpt": "权限规则统一适用于所有页面"
+            }
+          ]
+        },
+        {
+          "claimPath": "/globalRules/0/nonLocatableReason",
+          "sourceRefs": [
+            {
+              "sourceId": "prd-current",
+              "locator": "heading:权限",
+              "excerpt": "权限规则统一适用于所有页面"
+            }
+          ]
+        },
+        {
+          "claimPath": "/globalRules/0/rules/0",
+          "sourceRefs": [
+            {
+              "sourceId": "prd-current",
+              "locator": "heading:权限",
+              "excerpt": "只读用户仍可查看已保存结果"
+            }
+          ]
+        }
+      ],
+      "pendingItems": []
+    }
+  ],
+  "cards": [
+    {
+      "cardId": "EXAMPLE-CARD-01",
+      "displayNumber": "1",
+      "requirementId": "EXAMPLE-REQ",
+      "pageId": "example-page",
+      "surfaceId": "view:example",
+      "region": "顶部操作区",
+      "title": "新增批量导入入口",
+      "summary": "在标题右侧新增批量导入按钮，点击后打开导入抽屉。",
+      "changeKinds": [
+        "add"
+      ],
+      "changeContent": {
+        "added": [
+          "批量导入按钮"
+        ],
+        "placement": "页面标题右侧、刷新按钮之前",
+        "finalResult": "用户可从当前页面进入批量导入流程"
+      },
+      "fields": [],
+      "rules": [],
+      "interactions": [
+        {
+          "precondition": "用户拥有编辑权限。",
+          "action": "点击批量导入。",
+          "feedback": "右侧打开导入抽屉。",
+          "result": "用户可以选择文件并继续。",
+          "failure": "入口不可用时保持当前页并说明原因。"
+        }
+      ],
+      "errors": [],
+      "pendingItems": [],
+      "evidenceBindings": [
+        {
+          "claimPath": "/cards/0/title",
+          "sourceRefs": [
+            {
+              "sourceId": "prd-current",
+              "locator": "heading:批量导入",
+              "excerpt": "批量导入"
+            }
+          ]
+        },
+        {
+          "claimPath": "/cards/0/summary",
+          "sourceRefs": [
+            {
+              "sourceId": "prd-current",
+              "locator": "heading:批量导入",
+              "excerpt": "在标题右侧新增批量导入按钮"
+            }
+          ]
+        },
+        {
+          "claimPath": "/cards/0/changeContent",
+          "sourceRefs": [
+            {
+              "sourceId": "prd-current",
+              "locator": "heading:批量导入",
+              "excerpt": "新增批量导入按钮"
+            },
+            {
+              "sourceId": "code-current",
+              "locator": "text:id=\"page-title-actions\"",
+              "excerpt": "id=\"page-title-actions\""
+            }
+          ]
+        },
+        {
+          "claimPath": "/cards/0/interactions/0",
+          "sourceRefs": [
+            {
+              "sourceId": "prd-current",
+              "locator": "heading:交互",
+              "excerpt": "点击批量导入后打开导入抽屉"
+            }
+          ]
+        }
+      ],
+      "anchor": {
+        "kind": "element",
+        "selector": "#batch-import-entry",
+        "enterActions": [],
+        "manualPath": "示例页 → 顶部操作区 → 批量导入"
+      },
+      "history": []
+    }
+  ],
+  "scopeEvidence": {
+    "productScope": {
+      "summary": "产品能力适用范围",
+      "included": [
+        "示例页增量"
+      ],
+      "excluded": [
+        "本切片之外的页面"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "prd-current",
+          "locator": "heading:范围",
+          "excerpt": "已确认的产品适用范围"
+        }
+      ]
+    },
+    "sampleSource": {
+      "status": "present",
+      "samples": [
+        {
+          "sampleId": "sample-1",
+          "label": "示例页面样本",
+          "context": "示例运行环境",
+          "sourceIds": [
+            "runtime-current"
+          ]
+        }
+      ],
+      "note": "页面样本不改变产品范围"
+    },
+    "verifiedCoverage": {
+      "verified": [
+        "示例页主要流程"
+      ],
+      "notVerified": [
+        "未验证的其他角色分支"
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "runtime-current",
+          "locator": "walkthrough:main",
+          "excerpt": "已实际走查的页面流程"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "skill_name": "prototype-design-workflow",
+  "evals": [
+    {
+      "id": 1,
+      "name": "existing-system-increment-baseline-first",
+      "prompt": "我有一个现有后台页面，系统是 Ant Design Pro 4.0。现在想在销售线索列表上加一个“待清洗线索”的筛选入口，并在详情抽屉里加一个处理按钮。原页面代码和截图我可以给你，先帮我做原型。",
+      "expected_output": "应触发 prototype-design-workflow，并识别为既有系统增量模式。不能直接生成高保真 HTML，应先要求或读取原页面证据，并输出页面关系矩阵、现有结构保留清单、本次增量变化清单、基线证据来源。应强调原平台是验收基线，不是灵感参考。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "zero-to-one-wireframe-before-hifi",
+      "prompt": "我想做一个 0 到 1 的 AI 工作台，给运营同学每天处理异常订单。现在还没有现成系统页面，需求大概写完了，想先看看页面形态和主路径。",
+      "expected_output": "应触发 prototype-design-workflow，并识别为 0→1 新项目模式。应先输出原型前需求摘要、用户路径、页面地图、信息架构、关键状态清单和低保真线框方向，而不是直接做高保真。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "semi-reference-boundary",
+      "prompt": "我给你几个竞品截图，想参考它们的看板风格做我们自己的任务管理工具。不要照抄，但希望整体体验接近这种清晰的卡片流。",
+      "expected_output": "应触发 prototype-design-workflow，并识别为半参考型模式。应先输出参考来源清单，以及硬继承、软参考、禁止照搬边界，再进入本项目页面地图和低保真线框。",
+      "files": []
+    },
+    {
+      "id": 4,
+      "name": "fast-path-from-confirmed-plan",
+      "prompt": "这个原型 plan 已经确认了，里面写清楚要做一个 375x812 的移动端单页 HTML 原型，有未订阅和已订阅两个状态。你直接按 plan 生成高保真 HTML 就行。",
+      "expected_output": "应触发 prototype-design-workflow 的快速通道。不要重新头脑风暴，不要反复询问产品方向。应读取 plan，做简短 readiness 判断，然后直接生成单文件 HTML，并按 plan 验收页面、状态和交互。",
+      "files": []
+    },
+    {
+      "id": 5,
+      "name": "prd-review-pass-to-prototype",
+      "prompt": "PRD 审查已经 PASS 了，现在想把里面的页面和交互转成原型，先看列表、筛选、详情抽屉和几个状态怎么呈现。",
+      "expected_output": "应触发 prototype-design-workflow。应承接 PRD 审查 PASS 结果，进入模式路由；如果没有原平台，则走 0→1 或普通原型流程；如果有原平台，则走既有系统增量。应关注页面范围、用户路径、关键状态和验收约束。",
+      "files": []
+    },
+    {
+      "id": 6,
+      "name": "do-not-trigger-writing-plan",
+      "prompt": "PRD 已经写完并审查通过了，下一步直接进入 spec，然后帮我写实施计划。",
+      "expected_output": "不应触发 prototype-design-workflow。应识别用户明确跳过原型，转向 spec / writing-plans / implementation plan 流程。",
+      "files": []
+    },
+    {
+      "id": 7,
+      "name": "do-not-use-framework-as-fidelity-fix",
+      "prompt": "你上次用 HTML 画出来的后台原型全是线框和框框，和我们 Ant Design Pro 4.0 的原平台完全不像。是不是应该换 React 或新 UI 框架？",
+      "expected_output": "应触发 prototype-design-workflow，并说明问题默认不是 HTML 限制，而是没有绑定原平台组件和样式基线。应建议先冻结 Ant Design Pro 4.0 原平台基线；只有复杂交互、持续迭代或贴近开发实现时才使用 React / Ant Design Pro 4.0，不应引入新 UI 体系。",
+      "files": []
+    },
+    {
+      "id": 8,
+      "name": "existing-system-increment-material-roles-and-missing-component",
+      "prompt": "我要在销售线索详情抽屉里加顾客客资标签组件，清洗页和去重页也会打开这个详情。不要把它当成旧清洗项目。组件参考 TP 门店管理里的门店标签选择器，但我不确定你能不能找到。",
+      "expected_output": "应识别为既有系统增量，并先输出材料角色表：销售线索详情抽屉是页面基线，清洗页/去重页是入口承载页，TPR 客资标签是业务能力参考，门店标签选择器是组件参考，旧清洗项目不能当成本体。应输出页面关系矩阵、结构保留清单和增量清单。若找不到指定门店标签组件，应暂停说明已查路径、缺口、替代参考和需要用户补充的最小材料，不应直接凭理解做弹窗或重组页面。",
+      "files": []
+    },
+    {
+      "id": 9,
+      "name": "fork-diagnostic-branch-self-generated-boundary-card",
+      "prompt": "这个原型任务太长了，我想 fork 一个诊断子分支排查为什么详情抽屉跑偏。别让主分支塞一大段上下文，也别让我手动整理模板。",
+      "expected_output": "应先读取 references/host-codex.md。应说明 Codex fork 会继承主分支上下文，因此主分支不要预置大段边界包。应给出 fork 后使用的启动提示，要求诊断子分支先从继承上下文中自生成边界卡并等待用户确认。边界卡应包含本项目是/不是、当前分支职责、主分支当前阶段、排查异常、材料优先级、正确基线、禁止误区、验收路径、冲突裁决。应要求子分支发现冲突裁决时先列冲突不要选边。诊断结束只回传极简主分支行动包：诊断对象、根因一句话、主分支需要修改、需要重新加载的文件、验收检查点、fork 内是否改过文件、不需要主分支处理的事项；不应回传知识库候选或长篇复盘。",
+      "files": []
+    },
+    {
+      "id": 10,
+      "name": "internal-rule-carrier-split",
+      "prompt": "我要给销售线索详情抽屉加客资标签保存。后端规则是统一覆盖标注范围内全部 MCU，并按 MCU 分别生成客资标签标注记录；提交前会校验标签组合。原型页面上要把这些说明都写出来吗？",
+      "expected_output": "应触发 prototype-design-workflow，并先做规则呈现分层。应明确 MCU 覆盖、分别生成记录和提交前校验属于 PRD / 接口 / 验收或交互反馈，不应直接写成页面说明。页面最多呈现用户需要理解的对象、范围和结果；校验只在失败时以可修正反馈出现。应避免把 MCU、记录生成、接口或校验链路作为用户页面文案。",
+      "files": []
+    },
+    {
+      "id": 11,
+      "name": "overwrite-warning-only-when-user-needs-it",
+      "prompt": "标签编辑弹窗保存时以本次操作为准，会替换已有标签。原型里是不是应该在页面顶部长期展示这条规则，并写明保存前会做后端校验？",
+      "expected_output": "应触发 prototype-design-workflow，并区分页面可见风险与内部实现说明。若保存会造成用户需要避免的不可逆覆盖，应在保存时提供简洁确认或结果提示，例如“保存后将替换当前已选标签”，而不是长期页面说明。后端校验不应展示；失败时只给字段级或提交级可修正反馈。应把完整覆盖和校验口径放到原型标注、PRD 或验收说明。",
+      "files": []
+    },
+    {
+      "id": 12,
+      "name": "developer-readable-existing-system-handoff",
+      "prompt": "现有后台高保真原型和 PRD 已经确认。请生成给开发看的交付层：左侧保持真实原型，右侧说明本次字段、规则、交互和异常，并支持双向定位。",
+      "expected_output": "应读取 developer-readable reference；提出单一 manifest；右卡包含改动结论、字段、规则、交互、异常和来源；标记与右卡双向定位；不重做原型方案。",
+      "expectations": [
+        "明确读取 references/developer-readable-prototype.md，并选择 standard 开发可读性交付。",
+        "使用一份 change manifest 同时驱动页面标记、右卡和自动校验。",
+        "右卡包含改动结论、关键字段、业务规则、交互说明、异常反馈和 PRD 来源。",
+        "说明右卡到原型、原型到右卡以及返回上一个原型状态的双向定位。",
+        "保持左侧真实原型只读，不重新讨论或重做已确认原型方案。"
+      ],
+      "files": []
+    },
+    {
+      "id": 13,
+      "name": "developer-readable-field-rule-interaction-order",
+      "prompt": "开发把“线索是待处理状态”误认为页面字段。开发说明卡应该怎样组织，才能区分关键字段、前置状态、规则和操作反馈？",
+      "expected_output": "明确顺序为改动结论→关键字段→业务规则→交互→异常→来源；前置状态不得进入字段列表；字段名称和控件说明优先于前置条件。",
+      "expectations": [
+        "给出改动结论→关键字段→业务规则→交互说明→异常反馈→PRD 来源的固定顺序。",
+        "明确“线索是待处理状态”属于交互前置状态或业务规则，不是页面字段。",
+        "关键字段先列页面真实字段名称，再写控件、默认值、显示和校验。",
+        "交互说明按前置状态、用户动作、页面反馈、结果状态和失败反馈组织。",
+        "不把前置状态、权限条件或处理场景为了完整性塞进字段列表。"
+      ],
+      "files": []
+    },
+    {
+      "id": 14,
+      "name": "developer-readable-no-interface-by-default",
+      "prompt": "我只需要开发从原型旁边看懂文档里的字段和交互，不需要接口映射。请给出交付规则。",
+      "expected_output": "不输出接口、API、请求参数或组件映射；保留字段、规则、交互、异常和 PRD 来源；仅在用户明确要求且来源闭合时才另做实现映射。",
+      "expectations": [
+        "明确接口映射默认不展示。",
+        "交付内容保留改动结论、关键字段、业务规则、交互、异常和 PRD 来源。",
+        "不输出 API、请求参数、响应字段、组件或代码文件映射。",
+        "只有用户明确要求且技术事实来源闭合时，才另行生成实现映射。"
+      ],
+      "files": []
+    },
+    {
+      "id": 15,
+      "name": "developer-readable-top-surface-only",
+      "prompt": "线索详情抽屉打开时，底层列表编号也显示；从详情卡切换到规则卡时，新抽屉叠在旧详情上。开发阅读器应该怎么处理？",
+      "expected_output": "只显示最上层活动容器的编号、高亮和连线；跨容器先退出旧容器；同容器不重建；失败回滚；未知 overlay 安全隐藏标记。",
+      "expectations": [
+        "编号、高亮、右卡聚焦和虚线只属于最上层活动界面容器。",
+        "详情抽屉打开时隐藏底层列表的编号和连线。",
+        "跨容器切换先按当前路径退出旧容器，再执行目标卡进入动作。",
+        "同一容器内切卡不关闭或重建容器，只切换锚点与聚焦。",
+        "切换失败原子回滚；活动容器歧义或未知 overlay 时安全隐藏标记。"
+      ],
+      "files": []
+    },
+    {
+      "id": 16,
+      "name": "developer-readable-pilot-vs-full",
+      "prompt": "当前只做了三个代表页面的开发阅读快照，但完整 PRD 还有其他页面。右侧总览和构建应该怎样声明范围？",
+      "expected_output": "使用 coverage=pilot-slice；明确 included、navigation-only 和 out-of-slice；不得称完整需求；只有 coverage=full 且页面/卡片闭合时才生成完整快照。",
+      "expectations": [
+        "把当前快照声明为 coverage=pilot-slice。",
+        "总览分别说明 included、navigation-only 和 out-of-slice。",
+        "明确三个代表页面不等于完整 PRD 页面范围，不得称完整需求。",
+        "只有 coverage=full 且每个页面有卡片覆盖、来源与容器归属闭合时才称完整快照。",
+        "full coverage 存在未覆盖页面或影响落地的 pendingItems 时自动校验失败。"
+      ],
+      "files": []
+    },
+    {
+      "id": 17,
+      "name": "developer-readable-human-observation-not-gate",
+      "prompt": "开发在 5 分钟任务用了 309 秒，20 分钟回答也漏了几项。是不是必须继续找人测试到达标，才能修改并发布 Skill？",
+      "expected_output": "明确回答“不需要”；时间和漏答只作为可选观察；当前自动通过样本可直接进入 candidate；不得要求第二轮真人测试、反馈台账或 PILOT-HUMAN-PASS。",
+      "expectations": [
+        "直接回答不需要继续找人测试到达计时目标。",
+        "把 5/20 分钟和漏答定义为寻找可行动问题的可选观察，不是门控。",
+        "说明自动通过且问题已审视的样本可以直接进入 candidate。",
+        "不要求第二轮真人测试、反馈台账或 PILOT-HUMAN-PASS。",
+        "不得用 Agent 自测冒充真人观察结果。"
+      ],
+      "files": []
+    },
+    {
+      "id": 18,
+      "name": "developer-readable-fast-path-regression",
+      "prompt": "这个移动端单页原型 plan 已确认，页面、状态和 375x812 尺寸都写清了。请直接生成 HTML，不需要开发交付说明。",
+      "expected_output": "保留旧快速通道；不强制创建 manifest、右卡或开发阅读器；直接按 plan 生成和验收 HTML；不因新增 reference 把所有原型重流程化。",
+      "expectations": [
+        "识别为已确认 plan 的快速通道。",
+        "不重新头脑风暴或反复询问产品方向。",
+        "直接按 plan 生成并验收 375x812 移动端单页 HTML。",
+        "不强制创建 change manifest、右卡、编号、连线或开发阅读器。",
+        "明确用户未要求开发可读性交付，因此保持 light 流程。"
+      ],
+      "files": []
+    },
+    {
+      "id": 19,
+      "name": "existing-prototype-is-the-only-edit-baseline",
+      "prompt": "工作区已经有一个持续修改中的高保真原型，里面还有我刚改但未提交的内容。请在这个原型上增加批量处理，不要丢掉当前状态，并生成给开发看的右侧说明。",
+      "expected_output": "必须把当前工作区原型认定为唯一业务修改基线，先记录路径、Hash、版本与未提交状态，再原位做最小增量；不得新建替代页面。Standard 阅读器和快照只能派生。开始高保真前应走查当前交互页、定向检索当前代码并冻结同版本截图；任一可得证据未采集或冲突未裁决即 BLOCK。",
+      "expectations": [
+        "明确当前工作区现有原型是唯一业务修改基线。",
+        "先保护未提交状态并记录路径、Hash 和版本，再在原文件做最小增量。",
+        "禁止用新建替代页面、右侧阅读器或整合快照覆盖当前原型。",
+        "执行真实页面走查、定向代码检索、同版本截图三段基线链。",
+        "Standard 使用 v4 manifest、evidence bundle 和运行时联动验收；v2/v3 仅用于历史只读或显式沿革基线。"
+      ],
+      "files": []
+    },
+    {
+      "id": 20,
+      "name": "short-prd-does-not-authorize-fake-standard-semantics",
+      "prompt": "PRD 评审后删掉了很多交互说明，只保留目标和少量验收。你直接把 Standard 右侧卡补完整吧，不清楚的地方按常见后台习惯写。",
+      "expected_output": "必须拒绝按常见习惯补语义。目标口径来自现行 PRD / 用户裁决，现状与既有交互来自真实页面走查和当前代码；每个标题、摘要、变化、字段、规则、交互、异常都绑定可解析证据。仍无法证明的内容进入 blocksDelivery=true 的 pendingItems 并 BLOCK。应说明自动门不等于语义正确性证明，本例涉及来源缺口应触发独立复核。",
+      "expectations": [
+        "不从制作过程、旧原型或常见后台经验反推需求语义。",
+        "区分目标事实源与现状基线事实源。",
+        "要求每个语义单元绑定 Hash、locator 和 excerpt。",
+        "无法证明时写阻断性 pending item，而不是用默认文案补齐结构。",
+        "说明自动证据门的能力边界并触发独立复核。"
+      ],
+      "files": []
+    },
+    {
+      "id": 21,
+      "name": "reject-structurally-complete-semantically-empty-standard",
+      "prompt": "帮我验收这个开发阅读器：20 张右卡都有标题、字段和交互，但内容基本都是‘现有页面控件’‘查看或完成当前操作’；所有 surface 和 anchor 都写 body，PRD 来源只是填了文件名，右卡点左侧有时不连线。",
+      "expected_output": "必须判定 Standard 失败：默认占位语义、事实来源不可解析、body 虚拟 surface / anchor、不可见或缺失连线均是硬错误。每张可定位卡必须通过真实可见锚点、双向定位、可见连线和状态恢复；跨页通用规则只能进入明确非定位的 globalRules。不得因为结构完整或文件名已填写而 PASS。",
+      "expectations": [
+        "拒绝‘结构完整即合格’。",
+        "报出占位语义和未解析证据绑定问题。",
+        "拒绝 body、html、#root 等虚拟 surface 或 anchor。",
+        "要求逐卡双向定位、可见连线和返回状态恢复运行时验收。",
+        "区分可定位卡与不生成锚点的 globalRules。"
+      ],
+      "files": []
+    }
+  ]
+}

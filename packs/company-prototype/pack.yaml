@@ -1,0 +1,12 @@
+schema_version: 1
+pack_id: company-prototype
+version: 0.2.0
+compatible_skill: ">=0.1.14,<1.0.0"
+published_by: pilot-owner
+published_at: "2026-09-03T00:00:00+08:00"
+runtime_paths:
+  - contracts
+  - standards
+  - components
+  - surfaces
+  - cases

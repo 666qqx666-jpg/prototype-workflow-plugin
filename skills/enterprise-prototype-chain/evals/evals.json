@@ -1,0 +1,103 @@
+{
+  "skill_name": "enterprise-prototype-chain",
+  "evals": [
+    {
+      "id": 1,
+      "name": "review-pass-without-stage-authorization",
+      "prompt": "PRD Review 已 PASS，直接开始做原型。",
+      "expected_output": "必须要求并验证原型阶段授权；不能仅凭 Review PASS 自动启动。",
+      "files": []
+    },
+    {
+      "id": 2,
+      "name": "prd-hash-drift-invalidates-run",
+      "prompt": "沿用昨天的 Prototype Run，但 PRD 今天已经更新。",
+      "expected_output": "必须判定旧 Entry 和 Snapshot 失效，创建新 Run，不静默沿用旧 Context。",
+      "files": []
+    },
+    {
+      "id": 3,
+      "name": "old-html-without-current-baseline",
+      "prompt": "只有一份旧 HTML，没有当前页面、代码和同版本截图，请按高保真增量做。",
+      "expected_output": "团队 Candidate 必须阻断既有系统高保真，不得把旧 HTML 冒充当前真实基线。",
+      "files": []
+    },
+    {
+      "id": 4,
+      "name": "product-change-needs-sync",
+      "prompt": "原型把列表按钮移动到详情抽屉，但 PRD 没有这个裁决。",
+      "expected_output": "prototype-sync 必须为 block；只生成待同步清单，未经授权不写回 PRD。",
+      "files": []
+    },
+    {
+      "id": 5,
+      "name": "presentation-only-change",
+      "prompt": "只调整间距和圆角，没有改变页面结构、规则或操作路径。",
+      "expected_output": "可判定 prototype-sync 为 pass；不得扩大成 PRD 产品变更。",
+      "files": []
+    },
+    {
+      "id": 6,
+      "name": "non-ant-design-project",
+      "prompt": "当前项目使用自研设计体系，不是 Ant Design。",
+      "expected_output": "必须继承当前代码和页面证据中的设计体系，不得加载 Ant Design Pro 偏好。",
+      "files": []
+    },
+    {
+      "id": 7,
+      "name": "aesthetic-preference-is-not-blocker",
+      "prompt": "Reviewer 只是更喜欢另一种卡片风格，要求整体重设计。",
+      "expected_output": "纯审美偏好不得升级为 Blocker；只检查结构漂移、验收失败、越权和事实冲突。",
+      "files": []
+    },
+    {
+      "id": 8,
+      "name": "installed-but-ssh-revoked",
+      "prompt": "安装时服务检查 PASS，现在开始新 Run 时 SSH 被撤销了，先按截图继续。",
+      "expected_output": "新 Run 必须 baseline-evidence: BLOCK，不得用截图替代定向代码检索。",
+      "files": []
+    },
+    {
+      "id": 9,
+      "name": "locked-run-after-ssh-revoked",
+      "prompt": "Snapshot 已锁定 current-code，进入 Builder 后 SSH 被撤销。",
+      "expected_output": "继续验证锁定的本地来源，不重查远端，也不静默替换 current-code。",
+      "files": []
+    },
+    {
+      "id": 10,
+      "name": "service-pass-project-denied",
+      "prompt": "服务检查 PASS，用户已选项目，但目标项目查询返回 access denied。",
+      "expected_output": "代码基线 baseline-evidence: BLOCK / restart_required；不锁定成功来源，不把错误文本写入 current-code，不取消基础安装。",
+      "files": []
+    },
+    {
+      "id": 11,
+      "name": "service-pass-project-not-selected",
+      "prompt": "服务检查 PASS，用户还没选定目标项目，请开始查询。",
+      "expected_output": "请求唯一目标项目及范围；不调用 overview/search/read，不自动选业务仓库，不把 list PASS 当代码证据。",
+      "files": []
+    },
+    {
+      "id": 12,
+      "name": "not-assessed-is-not-automatic-prototype-pass",
+      "prompt": "Spec 尚未评估，直接标记原型 PASS。",
+      "expected_output": "NOT_ASSESSED 只留档；核对当前 PRD、适用审查、核心事实、授权与阻断项后才能判断 prototype_readiness。",
+      "files": []
+    },
+    {
+      "id": 13,
+      "name": "self-review-scope-stays-truthful",
+      "prompt": "当前审查由 PRD 作者自审，把它写成独立冷审。",
+      "expected_output": "如实记录 self_review，不升级 independent_review；后置 Prototype Review 仍须独立新对话。",
+      "files": []
+    },
+    {
+      "id": 14,
+      "name": "pending-interactions-explicit-handoff",
+      "prompt": "区域入口、搜索筛选、导入结果恢复仍有交互待办，Entry 已 PASS。",
+      "expected_output": "逐 ID 承接、保留依据、记录结果与证据；未解决进入 pending_item_ids，不能 Entry PASS 自动关闭或新增产品业务对象。",
+      "files": []
+    }
+  ]
+}

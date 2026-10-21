@@ -1,0 +1,38 @@
+schema_version: 1
+protocol: enterprise-prototype-handoff/v1
+required_builder_gates:
+  baseline-evidence: pass
+  high-fidelity-readiness: pass
+  automated-validation: pass
+  prototype-sync: pass
+standard_manifest_contract: 4.0.0
+standard_required_bindings:
+  - reader_snapshot_path/sha256
+  - reader_metadata_path/sha256
+revision_required_bindings:
+  - previous_manifest_path/sha256
+  - previous_snapshot_path/sha256
+  - lineage_baseline_receipt_path/sha256
+post_builder_review:
+  independent_review_schema: 2.0.0
+  required_negative_checks:
+    - unrelated-field-preservation
+    - empty-and-missing-values
+    - historical-out-of-candidate-data
+    - unauthorized-actions
+    - concurrent-conflict
+    - post-save-membership
+optional_product_freeze: true
+freeze_implies_review_or_gate_pass: false
+required_rules:
+  - 0.1.19 Standard requires Manifest 4.0.0
+  - revision requires previous Manifest Snapshot and lineage receipt
+  - reader is cumulative and never replaces the editable prototype source
+  - fact sources are collapsed independently by default
+  - display numbers are one through N while card IDs remain stable
+  - Builder Handoff precedes Independent Review v2
+  - product freeze is optional and does not imply Review or Gate pass
+  - scope sample and verified coverage are separate claims
+  - resolved pending cannot remain visible
+review_required: true
+writeback: none

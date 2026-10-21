@@ -1,0 +1,209 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.prototype-design-workflow/change-manifest-v2.schema.json",
+  "title": "Developer-readable prototype element-card manifest",
+  "type": "object",
+  "required": ["schemaVersion", "requirement", "prototype", "pages", "surfaces", "cards"],
+  "properties": {
+    "schemaVersion": {"const": "2.0.0"},
+    "requirement": {
+      "type": "object",
+      "required": ["id", "title", "coverage", "sourceLabel", "sourceHash"],
+      "properties": {
+        "id": {"type": "string", "minLength": 1},
+        "title": {"type": "string", "minLength": 1},
+        "coverage": {"enum": ["full", "pilot-slice"]},
+        "sourceLabel": {"type": "string", "minLength": 1},
+        "sourceHash": {"type": "string", "pattern": "^[a-fA-F0-9]{64}$"},
+        "scope": {"$ref": "#/$defs/scope"}
+      },
+      "additionalProperties": false
+    },
+    "prototype": {
+      "type": "object",
+      "required": ["sourceLabel", "sourceHash"],
+      "properties": {
+        "sourceLabel": {"type": "string", "minLength": 1},
+        "sourceHash": {"type": "string", "pattern": "^[a-fA-F0-9]{64}$"}
+      },
+      "additionalProperties": false
+    },
+    "pages": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["pageId", "title", "order"],
+        "properties": {
+          "pageId": {"type": "string", "minLength": 1},
+          "title": {"type": "string", "minLength": 1},
+          "order": {"type": "integer", "minimum": 1}
+        },
+        "additionalProperties": false
+      }
+    },
+    "surfaces": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/surface"}
+    },
+    "cards": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"$ref": "#/$defs/card"}
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "scope": {
+      "type": "object",
+      "required": ["included", "navigationOnly", "outOfSlice"],
+      "properties": {
+        "included": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "navigationOnly": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "outOfSlice": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        }
+      },
+      "additionalProperties": false
+    },
+    "sourceRef": {
+      "type": "object",
+      "required": ["sourceType", "file", "section"],
+      "properties": {
+        "sourceType": {"const": "prd"},
+        "file": {"type": "string", "minLength": 1, "pattern": "^[^/\\\\]+$"},
+        "section": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "action": {
+      "type": "object",
+      "required": ["type", "selector"],
+      "properties": {
+        "type": {"enum": ["click", "assert-visible", "assert-hidden"]},
+        "selector": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "surface": {
+      "type": "object",
+      "required": [
+        "surfaceId", "kind", "rootSelector", "activeSelector", "parentSurfaceIds",
+        "exitActions", "exitGuardSurfaceIds", "snapshotSelectors"
+      ],
+      "properties": {
+        "surfaceId": {"type": "string", "minLength": 1},
+        "kind": {"enum": ["view", "drawer", "modal"]},
+        "rootSelector": {"type": "string", "minLength": 1},
+        "activeSelector": {"type": "string", "minLength": 1},
+        "parentSurfaceIds": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "exitActions": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/action"}
+        },
+        "exitGuardSurfaceIds": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "snapshotSelectors": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        }
+      },
+      "additionalProperties": false
+    },
+    "anchor": {
+      "type": "object",
+      "required": ["kind", "selector", "enterActions", "manualPath"],
+      "properties": {
+        "kind": {"enum": ["element", "region"]},
+        "selector": {"type": "string", "minLength": 1},
+        "enterActions": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/action"}
+        },
+        "manualPath": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "field": {
+      "type": "object",
+      "required": ["name", "control"],
+      "properties": {
+        "name": {"type": "string", "minLength": 1},
+        "control": {"type": "string", "minLength": 1},
+        "defaultValue": {"type": ["string", "boolean", "number", "null"]},
+        "required": {"type": "boolean"},
+        "options": {"type": "array", "items": {"type": "string"}},
+        "visibility": {"type": "string"},
+        "enabledWhen": {"type": "string"},
+        "validation": {"type": "string"},
+        "linkage": {"type": "string"}
+      },
+      "additionalProperties": false
+    },
+    "interaction": {
+      "type": "object",
+      "required": ["precondition", "action", "feedback", "result", "failure"],
+      "properties": {
+        "precondition": {"type": "string", "minLength": 1},
+        "action": {"type": "string", "minLength": 1},
+        "feedback": {"type": "string", "minLength": 1},
+        "result": {"type": "string", "minLength": 1},
+        "failure": {"type": "string", "minLength": 1}
+      },
+      "additionalProperties": false
+    },
+    "card": {
+      "type": "object",
+      "required": [
+        "cardId", "displayNumber", "requirementId", "pageId", "surfaceId", "region", "title",
+        "summary", "changeKinds", "changeContent", "fields", "rules",
+        "interactions", "errors", "pendingItems", "sourceRefs", "anchor", "history"
+      ],
+      "properties": {
+        "cardId": {"type": "string", "minLength": 1},
+        "displayNumber": {"type": "string", "minLength": 1},
+        "requirementId": {"type": "string", "minLength": 1},
+        "pageId": {"type": "string", "minLength": 1},
+        "surfaceId": {"type": "string", "minLength": 1},
+        "region": {"type": "string", "minLength": 1},
+        "title": {"type": "string", "minLength": 1},
+        "summary": {"type": "string", "minLength": 1},
+        "changeKinds": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"enum": ["add", "modify", "delete", "critical-reuse"]}
+        },
+        "changeContent": {"type": "object"},
+        "fields": {"type": "array", "items": {"$ref": "#/$defs/field"}},
+        "rules": {"type": "array", "items": {"type": "string", "minLength": 1}},
+        "interactions": {"type": "array", "items": {"$ref": "#/$defs/interaction"}},
+        "errors": {"type": "array", "items": {"type": "object"}},
+        "pendingItems": {"type": "array", "items": {"type": "object"}},
+        "sourceRefs": {"type": "array", "minItems": 1, "items": {"$ref": "#/$defs/sourceRef"}},
+        "anchor": {"$ref": "#/$defs/anchor"},
+        "history": {"type": "array", "items": {"type": "object"}}
+      },
+      "additionalProperties": false
+    }
+  }
+}
