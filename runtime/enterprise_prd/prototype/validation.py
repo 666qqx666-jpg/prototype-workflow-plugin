@@ -185,8 +185,7 @@ def validate_output(
             timeout=120,
         )
         if result.returncode != 0:
-            detail = (result.stderr or result.stdout or "validator failed").splitlines()[0]
-            raise GateBlockedError(f"v4 validator failed: {detail[:300]}")
+            raise GateBlockedError.validator_failure(result.stderr or result.stdout or "validator failed")
         validator = script.resolve()
     else:
         raise ContractError("validator_mode must be light or standard")

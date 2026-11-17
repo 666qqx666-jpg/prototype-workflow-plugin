@@ -1,4 +1,4 @@
-import argparse,json,sys,uuid
+import argparse,json,os,sys,uuid
 from pathlib import Path
 from . import manager,contracts,storage
 
@@ -30,6 +30,13 @@ def main(argv=None):
     root=Path(args.plugin_root).resolve() if args.command=='setup' else Path(__file__).resolve().parents[1]
     backend=manager.Backend(home,root)
     try:
+        if args.command=='new':
+            # Native refresh may replace the very cache directory launching this
+            # CLI. Resolve user input first; never inherit that cwd into npm or
+            # the in-process installer. Only new refreshes; run keeps its cwd so
+            # relative arguments to the pinned executor retain their meaning.
+            args.workspace=args.workspace.expanduser().absolute()
+            os.chdir(home)
         if args.command=='setup':result=manager.setup(home=home,plugin_root=root,company_profile=Path(args.company_profile),ssh_user=args.ssh_user,ssh_identity=args.ssh_identity,backend=backend)
         elif args.command=='new':result=manager.start_requirement(home=home,workspace=args.workspace,loaded_plugin_version=args.loaded_plugin_version,backend=backend)
         elif args.command=='resume':result=manager.resume_requirement(home=home,workspace=args.workspace,backend=backend)

@@ -1,6 +1,6 @@
 # 一次初始化与日常使用
 
-1. 在维护者正式发布后安装固定 Git 来源的 `prototype-workflow@qqx-prototype`。
+1. 从固定Git来源安装 `prototype-workflow@qqx-prototype`，当前批准发行及更新范围见README与发行说明。
 2. 告诉 Agent：“初始化原型工作流”，提供内部可信 profile 位置、已有 SSH 用户名和个人密钥路径。profile 由维护者通过内部可信渠道提供，不随插件公开。
 3. 只在返回 `ready` 后开始需求。环境缺失由本人补齐；插件不会改系统环境、生成密钥、申请账号或更新中心机主机信任。
 
@@ -38,5 +38,7 @@
 ## 维护者本地命令
 
 在实际插件根执行 `python3.12 -B -m plugin_runtime.cli`，只支持 `setup/new/resume/run/feedback`。薄 Skill 给出明确参数；全部原生命令通过 `run --workspace <需求目录> -- prototype ...` 调用绑定版本。`--home` 仅用于隔离本机验证，不能用作跳过身份检查。
+
+尚未公开的候选使用独立的 `plugin_runtime.local_trial`，详见 [私有候选验证](LOCAL-CANDIDATE-VALIDATION.md)。它只接受新建隔离根、明确选定版本与摘要，执行真实安装及绑定；不改变公共 new，不属于公开更新或桌面安装通过。
 
 候选验证使用已有 npm 内容缓存和 Chromium 缓存恢复，不宣称无缓存冷安装。尚未承诺 Windows/Linux、其他 Agent 客户端、真实同事 SSH 权限、桌面 onboarding 或最终 GitHub 来源可用。

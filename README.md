@@ -1,8 +1,8 @@
 # 原型工作流插件
 
-本机预发布候选 **0.2.2**，包含 [UPD-01 更新恢复修复](docs/UPD-01.md)。公开工具与公司代码读取权限分别管理；仓库源码可见不代表可访问公司服务。
+当前批准发行 **0.2.12（预发布）**。本版累计改进既有页面交互继承、开发阅读状态恢复、真实工作簿往返与安装执行稳定性，见[更新说明](docs/RELEASE-0.2.12.md)。公开工具与公司代码读取权限分别管理；仓库源码可见不代表可访问公司服务。
 
-安装源固定为 `https://github.com/666qqx666-jpg/prototype-workflow-plugin` 的 `main` 分支，插件标识为 `prototype-workflow@qqx-prototype`。本候选尚未上传、公开或发布 Stable；以下正式来源命令供发布授权后使用，不表示远端已可安装。
+安装源固定为 `https://github.com/666qqx666-jpg/prototype-workflow-plugin` 的 `main` 分支，插件标识为 `prototype-workflow@qqx-prototype`。这是预发布版本，尚未晋级 Stable。
 
 ```sh
 codex --no-daemon plugin marketplace add https://github.com/666qqx666-jpg/prototype-workflow-plugin --ref main
@@ -16,6 +16,8 @@ codex --no-daemon plugin add prototype-workflow@qqx-prototype
 - 更新网络失败可使用已验证旧安装，并显示实际版本；同版本摘要变化或实体漂移会阻断。
 - 产品尚未收敛时继续修改与累计阅读稿；交付时必须承接真实独立 Review，再运行原生 Gate。
 
-环境范围：macOS、Python 3.12、Node.js 22、npm、SSH、锁定 Playwright/Chromium。当前验证为隔离 HOME、原生 CLI、本机 Git 来源与合成 SSH；实际桌面安装和最终 GitHub 来源仍未验证。合成 Review/Gate 只验证协议链，不代表业务独立验收。
+环境范围：macOS、Python 3.12、Node.js 22、npm、SSH、锁定 Playwright/Chromium。本版安装包已完成本机缓存依赖安装、133项Core/Chromium检查及20个入口链接核对，安装时使用维护者已有SSH完成认证与list。限定导入页与阅读稿完成了真实XLSX往返；验证数据为合成数据。冷网络安装、同事环境、完整业务审查和全流程无纠偏生成尚未据此通过。
+
+旧需求继续使用原绑定版本；如新需求返回 `reload_required`，按提示重载客户端或新建对话后再继续。维护者的本地私有候选入口不等同公开源更新。
 
 [使用说明](docs/USE.md) · [反馈表](docs/FEEDBACK.md) · [来源与许可边界](docs/ORIGIN.md)

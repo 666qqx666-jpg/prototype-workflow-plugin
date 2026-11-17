@@ -1,0 +1,9 @@
+{
+  "cards": [
+    {"cardId":"C-filter","region":"member-list-filter","title":"新增查询与重置","changeKinds":["add"],"changes":["新增查询和重置按钮、成员类型筛选"]},
+    {"cardId":"C-detail","region":"member-detail-type","title":"三张卡片单选","changeKinds":["add"],"changes":["三个选项仅可选一个"]},
+    {"cardId":"C-save","region":"member-detail-footer","title":"表单保存与重置","changeKinds":["add"],"rules":["姓名不能为空","保存失败保留草稿","重置恢复当前已保存资料"]},
+    {"cardId":"C-region","region":"member-detail-region","title":"地区选择器关键复用","changeKinds":["critical-reuse"],"rules":["沿用原地区选择器及其已保存值回填"]},
+    {"cardId":"C-types","region":"member-type-management","title":"成员类型管理","changeKinds":["add"],"changes":["新增类型名称、使用账号数、查询、重置及编辑"]}
+  ]
+}

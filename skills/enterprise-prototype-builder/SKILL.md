@@ -15,7 +15,8 @@ description: Build an existing-system incremental prototype from one locked Team
 5. `baseline-evidence` 与 `high-fidelity-readiness` 必须均为 `PASS`；Candidate 不接受 `NOT_APPLICABLE`。
 6. 先区分已有原型与首次生成。已有原型源是唯一修改基线；先记录路径、修改前 Hash 和未提交状态，再做最小增量。首次生成只接受 `first-baseline-create` 锁定的确认记录，记录限定检索、用户确认无本需求旧源及唯一目标路径；不能拿空白 HTML、截图或其他需求原型充当旧源。真实产品基线及两个 PASS 门仍必须完整。读取核心 `references/local-source-and-first-generation.md` 执行本机来源及首次生成分支。
 7. `light` 只生成原型；0.1.13 新 `standard` 必须生成 v4 Manifest、Evidence Bundle、累计只读 Reader Snapshot 和 metadata。Reader 是派生阅读稿，不能替代唯一可编辑原型源；revision 还必须绑定 previous Manifest、Reader Snapshot 与 lineage receipt。
-8. 使用 `enterprise-prd prototype validate-output` 生成验证回执。
+8. 使用 `enterprise-prd prototype validate-output` 生成验证回执。在交付 HTML（Standard 使用最终 Reader）按生成前的保留清单逐页核对主要区块的所属容器、顺序及是否同时显示，记录原材料依据和实际结果。有差异时先修正对应页面再交付。
+   关键控件有原样式尺寸时实测尺寸。涉及导入导出时，按核心保真参考，用最终 HTML 下载模板、提交混合数据、下载失败行并修正重导，分别记录文件内容和数量。未验证项逐项保留。
 9. 汇总产品级变化并判定 `prototype-sync`；未授权回写时不修改 PRD。
 10. 用户确认产品三件套收敛后，可选择生成只读冻结副本；Freeze 不替代 Standard、Independent Review、Final Gate 或 Stable 发布。
 11. 使用 `enterprise-prd prototype builder-handoff` 生成内容无关 Builder Handoff。

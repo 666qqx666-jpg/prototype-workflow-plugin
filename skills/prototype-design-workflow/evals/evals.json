@@ -179,12 +179,12 @@
       "id": 19,
       "name": "existing-prototype-is-the-only-edit-baseline",
       "prompt": "工作区已经有一个持续修改中的高保真原型，里面还有我刚改但未提交的内容。请在这个原型上增加批量处理，不要丢掉当前状态，并生成给开发看的右侧说明。",
-      "expected_output": "必须把当前工作区原型认定为唯一业务修改基线，先记录路径、Hash、版本与未提交状态，再原位做最小增量；不得新建替代页面。Standard 阅读器和快照只能派生。开始高保真前应走查当前交互页、定向检索当前代码并冻结同版本截图；任一可得证据未采集或冲突未裁决即 BLOCK。",
+      "expected_output": "必须把当前工作区原型认定为唯一业务修改基线，先记录路径、Hash、版本与未提交状态，再原位做最小增量；不得新建替代页面。Standard 阅读器和快照只能派生。检查页面、代码、截图基线链；已确认且仍适用的材料与来源裁决直接复用，只补本轮受影响缺口，不机械重采。新的关键来源冲突仍须裁决，不伪记同版。",
       "expectations": [
         "明确当前工作区现有原型是唯一业务修改基线。",
         "先保护未提交状态并记录路径、Hash 和版本，再在原文件做最小增量。",
         "禁止用新建替代页面、右侧阅读器或整合快照覆盖当前原型。",
-        "执行真实页面走查、定向代码检索、同版本截图三段基线链。",
+        "检查真实页面、定向代码与截图三段基线链；复用已确认且适用的证据，仅补受影响缺口。",
         "Standard 使用 v4 manifest、evidence bundle 和运行时联动验收；v2/v3 仅用于历史只读或显式沿革基线。"
       ],
       "files": []
@@ -216,6 +216,20 @@
         "区分可定位卡与不生成锚点的 globalRules。"
       ],
       "files": []
+    },
+    {
+      "id": 22,
+      "name": "business-delta-versus-first-reader-lineage",
+      "prompt": "按附件 request.md 完成交付 A。只使用给定现状材料和批准需求，产出可执行交互模型与初次阅读卡片草案，不做正式业务审查。",
+      "expected_output": "首次 lineage 的 addedCardIds 覆盖全部卡，但旧列表的筛选改造不把整组查询／重置说成新增；详情说明新增成员类型选择能力，原保存／重置／地区选择不单独凑变化卡；新建类型管理页面保留真正新增的查询与使用账号数。实际生成模型保留显式查询、组选择双侧搜索、排序、取消、确认、详情重置与保存边界。",
+      "files": ["evals/fixtures/interaction-fidelity/request.md", "evals/fixtures/interaction-fidelity/baseline.mjs"]
+    },
+    {
+      "id": 23,
+      "name": "prune-inherited-cards-with-rule-continuity",
+      "prompt": "按附件 request.md 完成交付 B，修正已有累计稿的卡片语义，保留正确身份及必要规则，不重建业务原型。",
+      "expected_output": "保留正确旧卡身份，删减纯继承保存／地区复用卡，姓名必填、保存失败保留草稿、重置回填和地区回填约束仍有明确承接；lineage 分类互斥完整，不以卡数或固定文字判定成功。",
+      "files": ["evals/fixtures/interaction-fidelity/request.md", "evals/fixtures/interaction-fidelity/baseline.mjs", "evals/fixtures/interaction-fidelity/previous-cards.json"]
     }
   ]
 }

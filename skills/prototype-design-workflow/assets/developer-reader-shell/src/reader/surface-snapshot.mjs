@@ -9,6 +9,34 @@ const CLASS_STATE_SELECTOR = [
   '[role="tab"][id]'
 ].join(', ');
 const CONTROL_SELECTOR = 'input, select, textarea';
+const APPLICATION_STATE_KEY = '__PROTOTYPE_READER_STATE__';
+
+// Keep a detached JSON value, never a function, DOM node, Promise or live model.
+function copyApplicationState(value, seen = new Set()) {
+  if (value === null || typeof value === 'string' || typeof value === 'boolean') return value;
+  if (typeof value === 'number' && Number.isFinite(value)) return value;
+  if (typeof value !== 'object' || seen.has(value)) throw new Error('invalid state');
+  const proto = Object.getPrototypeOf(value);
+  if (!Array.isArray(value) && proto !== null &&
+      (Object.prototype.toString.call(value) !== '[object Object]' || Object.getPrototypeOf(proto) !== null)) {
+    throw new Error('non-data state');
+  }
+  if (Reflect.ownKeys(value).some(key => typeof key === 'symbol')) throw new Error('symbol state');
+  seen.add(value);
+  const result = Array.isArray(value) ? Array.from(value, item => copyApplicationState(item, seen))
+    : Object.fromEntries(Object.entries(value).map(([key, item]) => [key, copyApplicationState(item, seen)]));
+  seen.delete(value);
+  return result;
+}
+
+function applicationAdapter(doc) {
+  const adapter = doc.defaultView?.[APPLICATION_STATE_KEY];
+  if (adapter === undefined) return null;
+  if (!adapter || typeof adapter.capture !== 'function' || typeof adapter.restore !== 'function') {
+    throw new Error('invalid adapter');
+  }
+  return adapter;
+}
 
 function queryAll(doc, selector) {
   try {
@@ -22,27 +50,58 @@ function captureControls(node) {
   return [...node.querySelectorAll(CONTROL_SELECTOR)].map((control, index) => ({
     index,
     value: control.value,
+    ...(control.type === 'file' ? {files: [...control.files]} : {}),
     checked: Boolean(control.checked),
     indeterminate: Boolean(control.indeterminate),
-    selectedIndex: Number.isInteger(control.selectedIndex) ? control.selectedIndex : -1
+    selectedIndex: Number.isInteger(control.selectedIndex) ? control.selectedIndex : -1,
+    ...(control.multiple && control.options ? {selectedOptions: [...control.options].map(option => option.selected)} : {})
   }));
 }
 
-function restoreControls(node, controls) {
+function restoreControls(node, controls, strict = false) {
   const current = [...node.querySelectorAll(CONTROL_SELECTOR)];
+  if (strict && current.length !== (controls ?? []).length) return false;
   for (const saved of controls ?? []) {
     const control = current[saved.index];
     if (!control) continue;
-    if ('value' in control) control.value = saved.value;
+    if (saved.files) {
+      if (control.type !== 'file') return false;
+      // A file input cannot accept a non-empty value. Preserve the actual
+      // user-selected File objects, including when application restore rebuilt
+      // the control. This reads no path and dispatches no import/change event.
+      try {
+        const currentFiles = [...control.files];
+        if (currentFiles.length !== saved.files.length || currentFiles.some((file, i) => file !== saved.files[i])) {
+          const transfer = new control.ownerDocument.defaultView.DataTransfer();
+          for (const file of saved.files) transfer.items.add(file);
+          control.files = transfer.files;
+        }
+      } catch { return false; }
+    } else if ('value' in control) {
+      if (control.type === 'file' && saved.value) return false;
+      control.value = saved.value;
+    }
     if ('checked' in control) control.checked = saved.checked;
     if ('indeterminate' in control) control.indeterminate = saved.indeterminate;
     if ('selectedIndex' in control && saved.selectedIndex >= 0) {
       control.selectedIndex = saved.selectedIndex;
     }
+    if (saved.selectedOptions && control.options) {
+      if (strict && control.options.length !== saved.selectedOptions.length) return false;
+      [...control.options].forEach((option, index) => { option.selected = Boolean(saved.selectedOptions[index]); });
+    }
   }
+  return true;
 }
 
 export function capturePrototypeSnapshot(doc, surfaces = []) {
+  let applicationState;
+  try {
+    const adapter = applicationAdapter(doc);
+    if (adapter) applicationState = {version: 1, value: copyApplicationState(adapter.capture())};
+  } catch {
+    return {ok: false, code: 'E_SNAPSHOT_APPLICATION_STATE_INVALID'};
+  }
   let activeSurfaceIds = [];
   if (surfaces.length > 0) {
     const active = resolveActiveSurfacePath(doc, surfaces);
@@ -84,6 +143,7 @@ export function capturePrototypeSnapshot(doc, surfaces = []) {
   return {
     ok: true,
     snapshot: {
+      ...(applicationState ? {applicationState} : {}),
       activeSurfaceIds,
       dynamicNodes,
       classStates: classQuery.matches
@@ -106,6 +166,19 @@ export function capturePrototypeSnapshot(doc, surfaces = []) {
 export function restorePrototypeSnapshot(doc, snapshot) {
   if (!snapshot) return {ok: false, code: 'E_RETURN_POINT_MISSING'};
 
+  // Reconstruct dynamic content through the prototype's normal rendering code
+  // before restoring individual controls. Do not replace live innerHTML here.
+  if (snapshot.applicationState) {
+    try {
+      const adapter = applicationAdapter(doc);
+      if (!adapter || snapshot.applicationState.version !== 1) throw new Error('missing adapter');
+      const result = adapter.restore(copyApplicationState(snapshot.applicationState.value));
+      if (result !== undefined) throw new Error('restore must be synchronous and return void');
+    } catch {
+      return {ok: false, code: 'E_RETURN_APPLICATION_STATE_FAILED'};
+    }
+  }
+
   for (const saved of snapshot.dynamicNodes ?? []) {
     if (!saved.exists) continue;
     const queried = queryAll(doc, saved.selector);
@@ -127,7 +200,9 @@ export function restorePrototypeSnapshot(doc, snapshot) {
     // its normal exit/enter behavior; this layer only restores reversible UI
     // state and the runtime audit rejects remaining visible drift.
     node.className = saved.className;
-    restoreControls(node, saved.controls);
+    if (!restoreControls(node, saved.controls, Boolean(snapshot.applicationState))) {
+      return {ok: false, code: 'E_RETURN_CONTROL_STATE_MISMATCH', selector: saved.selector};
+    }
   }
 
   for (const saved of snapshot.classStates ?? []) {

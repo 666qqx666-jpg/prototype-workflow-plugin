@@ -7,6 +7,21 @@ SOURCE='https://github.com/666qqx666-jpg/prototype-workflow-plugin'
 MARKET='qqx-prototype'
 PLUGIN='prototype-workflow'
 
+def bind_requirement(*,workspace,release,backend):
+    """Publish only a verified installation; shared by public and private entry."""
+    workspace=Path(workspace).absolute();storage.no_symlink(workspace);workspace=workspace.resolve()
+    path=workspace/'.prototype-workflow/requirement.json';storage.no_symlink(path)
+    if path.exists():raise c.WorkflowError('REQUIREMENT_EXISTS')
+    binding=backend.describe_install(release);backend.validate_binding(binding,workspace)
+    try:
+        storage.write_once(path,binding)
+        backend.verify_requirement(path)
+    except FileExistsError:raise c.WorkflowError('REQUIREMENT_EXISTS') from None
+    except BaseException:
+        if path.exists():backend.remove_own_binding(path,binding)
+        raise
+    return binding
+
 def start_requirement(*,home,workspace,loaded_plugin_version,backend):
     home=Path(home).resolve();workspace=Path(workspace).absolute();storage.no_symlink(workspace);workspace=workspace.resolve();c.version(loaded_plugin_version)
     path=workspace/'.prototype-workflow/requirement.json';storage.no_symlink(path)
@@ -21,12 +36,7 @@ def start_requirement(*,home,workspace,loaded_plugin_version,backend):
             backend.verify_install(release);fallback=True;backend.notice('using_previous_version',release['distribution_version'])
         if not fallback and loaded_plugin_version!=release['distribution_version']:
             return {'status':'reload_required','distribution_version':release['distribution_version'],'plugin_path':str(backend.plugin_path(release))}
-        binding=backend.describe_install(release);backend.validate_binding(binding,workspace)
-        try:storage.write_once(path,binding)
-        except FileExistsError:raise c.WorkflowError('REQUIREMENT_EXISTS') from None
-        try:backend.verify_requirement(path)
-        except BaseException:
-            backend.remove_own_binding(path,binding);raise
+        binding=bind_requirement(workspace=workspace,release=release,backend=backend)
         return {'status':'ready','update':'fallback' if fallback else 'current','binding':binding}
 
 def resume_requirement(*,home,workspace,backend):
@@ -37,9 +47,10 @@ def run_requirement(*,home,workspace,arguments,backend):
     if not arguments or arguments[0]!='prototype':raise c.WorkflowError('PROTOTYPE_ONLY')
     return backend.invoke(binding,arguments)
 
-def setup(*,home,plugin_root,company_profile,ssh_user,ssh_identity,backend):
+def setup(*,home,plugin_root,company_profile,ssh_user,ssh_identity,backend,expected_release=None):
     with backend.update_lock(home):
         release=backend.approved()
+        if expected_release is not None and release!=expected_release:raise c.WorkflowError('CANDIDATE_CHANGED')
         package=backend.prepare_package(release)
         with backend.kit(package) as kit:
             kit.company_profile.import_profile(home,company_profile)
@@ -137,9 +148,14 @@ class Backend:
     @contextlib.contextmanager
     def kit(self,package):
         old=list(sys.path);previous=sys.modules.pop('company_profile',None)
+        previous_bytecode=sys.dont_write_bytecode
         try:
+            # The loader can cache the kit before its own module body disables
+            # bytecode. Never mutate this verified archive while importing it.
+            sys.dont_write_bytecode=True
             spec=importlib.util.spec_from_file_location('bound_prototype_kit',package/'prototype-kit.py');module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module);yield module
         finally:
+            sys.dont_write_bytecode=previous_bytecode
             sys.path[:]=old;sys.modules.pop('company_profile',None)
             if previous is not None:sys.modules['company_profile']=previous
     def install(self,release):
@@ -230,5 +246,9 @@ class Backend:
             except Exception as error:
                 # Match the bound bootstrap's failure exit without exposing raw native/SSH output.
                 status=getattr(error,'status','restart_required')
-                print(json.dumps({'status':status,'error':getattr(error,'code',getattr(error,'error',type(error).__name__)),'next_step':'保留本需求记录，按绑定版本排查；不要绕过门禁'},ensure_ascii=False),file=sys.stderr)
+                payload={'status':status,'error':getattr(error,'code',getattr(error,'error',type(error).__name__)),'next_step':'保留本需求记录，按绑定版本排查；不要绕过门禁'}
+                diagnostic=getattr(error,'validator_error',None)
+                if payload['error']=='gate_blocked' and diagnostic in {'E_RUNTIME_STATE_RESTORE','E_RUNTIME_STATE_RESTORE_REPEAT','E_RUNTIME_CONNECTOR_NOT_VISIBLE','E_ANCHOR_NOT_VISIBLE','E_ANCHOR_MISSING','E_SNAPSHOT_SELECTOR_AMBIGUOUS','E_SCHEMA_VALIDATION','E_PROTOTYPE_HASH'}:
+                    payload['validator_error']=diagnostic
+                print(json.dumps(payload,ensure_ascii=False),file=sys.stderr)
                 return (4 if status=='configuration_required' else 5) if hasattr(error,'status') else 6
